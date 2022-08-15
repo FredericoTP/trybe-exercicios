@@ -1,0 +1,9 @@
+ol li:nth-of-type(2n+1) {
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+ol li:nth-of-type(2n) {
+    background-color: yellow;
+    color: green;
+}
