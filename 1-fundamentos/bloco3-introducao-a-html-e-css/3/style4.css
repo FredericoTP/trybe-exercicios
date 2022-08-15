@@ -32,3 +32,27 @@ li em {
 #languages .java {
     background-color: pink;
 }
+
+a:hover {
+    font-weight: bolder;
+}
+
+#stack {
+    color: orange;
+}
+
+#w3s {
+    color:green;
+}
+
+#mdn {
+    color: black;
+}
+
+#dev {
+    color: yellow;
+}
+
+#trybe {
+    color: green;
+}
