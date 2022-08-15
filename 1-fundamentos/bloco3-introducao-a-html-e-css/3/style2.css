@@ -1,0 +1,11 @@
+h1, p, ol {
+    text-align: center;
+}
+
+li:hover {
+    background-color: aqua;
+}
+
+li:active {
+    font-family: Arial, Helvetica, sans-serif;
+}
