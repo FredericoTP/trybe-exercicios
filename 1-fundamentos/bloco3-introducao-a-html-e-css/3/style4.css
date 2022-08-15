@@ -24,3 +24,11 @@ li {
 li em {
     font-weight: bold;
 }
+
+#languages li:nth-child(-n+3) {
+    color: blue;
+}
+
+#languages .java {
+    background-color: pink;
+}
