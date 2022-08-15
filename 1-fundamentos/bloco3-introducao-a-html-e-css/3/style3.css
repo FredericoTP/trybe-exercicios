@@ -21,3 +21,24 @@ div:nth-of-type(4) {
 div:nth-of-type(5) {
     background-color: bisque;
 }
+
+div:nth-of-type(1) h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+div:nth-of-type(2) h3 {
+    font-style: italic;
+}
+
+div:nth-of-type(3) h3 {
+    color: red;
+}
+
+div:nth-of-type(4) h3 {
+    color: white;
+}
+
+div:nth-of-type(5) h3 {
+    text-align: right;
+}
