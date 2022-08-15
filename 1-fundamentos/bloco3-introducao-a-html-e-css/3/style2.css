@@ -1,4 +1,4 @@
-h1, p, ol {
+h1, p, ol, ul {
     text-align: center;
 }
 
@@ -8,4 +8,8 @@ li:hover {
 
 li:active {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+    list-style: none
 }
