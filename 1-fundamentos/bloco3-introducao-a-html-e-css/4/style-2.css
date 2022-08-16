@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #03071E;
+    text-align: center;
+    color: aquamarine;
+    padding: 35px;
+    font-size: large;
+    font-weight: 900;
+}
+
+#navigation {
+    background-color: #22040e;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    color: aquamarine;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 0 100px;
+}
+
+.nav-link:hover {
+    background-color: #03071E;
+    color: white;
+}
+
+
+
+
+
+h1, h2, h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p, a, li {
+    font-family: 'Kanit', sans-serif;
+}
