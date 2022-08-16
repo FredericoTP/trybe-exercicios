@@ -30,6 +30,52 @@
     color: white;
 }
 
+#main {
+    width: 80%;
+    background-color: #370617;
+    padding: 0 97px;
+    color: white;
+}
+
+#article1 {
+    color: white;
+}
+
+#article-information1 {
+    height: 300px;
+    color: white;
+
+}
+
+.article-list-image {
+    width: 47%;
+    display: inline-block;
+}
+
+#article2 .image {
+    padding: 10px 238px;
+}
+
+#article3 .image {
+    padding: 10px 238px;
+}
+
+#bibliography {
+    line-height: 40px;
+    padding: 0 0 20px;
+}
+
+#bibliography li a {
+    color: aquamarine;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+#bibliography li a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
 
 
 
@@ -40,4 +86,20 @@ h1, h2, h3 {
 
 p, a, li {
     font-family: 'Kanit', sans-serif;
+}
+
+h2 {
+    padding: 20px 0 15px;
+}
+
+h3, h4 {
+    padding: 10px 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.image {
+    padding: 10px 0 0 0;
 }
