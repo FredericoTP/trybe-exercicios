@@ -31,7 +31,7 @@
 }
 
 #main {
-    background-color: #370617;
+    background-color: black;
     padding: 0 0 0 10px;
     color: white;
 }
@@ -98,6 +98,14 @@
     background-color: white;
     color: black;
     font-weight: bolder;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
 }
 
 
