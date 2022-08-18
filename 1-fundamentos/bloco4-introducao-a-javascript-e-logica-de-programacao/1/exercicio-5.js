@@ -1,13 +1,19 @@
-let a = 165
+let a = 170
 
-let b = 15
+let b = 5
 
-let c = 120
+let c = 5
 
-if (a + b + c == 180) {
-    console.log("true");
-} else if (a < 0 || b < 0 || c < 0) {
-    console.log("erro");
+let somaAngulo = a + b + c
+
+let anguloPositivo = a > 0 && b > 0 && c > 0;
+
+if (anguloPositivo) {
+    if (somaAngulo === 180) {
+        console.log("true");
+    } else {
+        console.log("false");
+    };
 } else {
-    console.log("false");
+    console.log("erro");
 }
