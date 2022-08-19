@@ -76,4 +76,33 @@ for (let index = 0; index < numbers.length; index += 1) {
     }
 }
 
-console.log(totalImpares);
+if (totalImpares === 0) {
+    console.log("nenhum valor ímpar encontrado");
+} else {
+    console.log(totalImpares);
+}
+
+// Exercício 7
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let menorValor = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    numbers[index];
+    if (numbers[index] < menorValor) {
+        menorValor = numbers[index];
+    }
+}
+
+console.log(menorValor);
+
+// Exercício 8
+
+let numeros = [];
+
+for (let index = 0; index < 25; index +=1) {
+    numeros.push(index + 1)
+}
+
+console.log(numeros);
