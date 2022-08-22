@@ -14,6 +14,9 @@ if (sum > 15) {
 
 
 
+// Fixando aprendizados
+// Exercício 7
+
 const number = 100;
 
 let sum = 0;
