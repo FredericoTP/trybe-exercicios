@@ -97,4 +97,21 @@ for (let index2 = 1; index2 <= number; index2 += 1) {
 
 let number = 5;
 
-let geometrica = [*];
+let geometrica = [];
+
+for (let index = 1; index <= number; index += 1) {
+    geometrica.push("*")
+    console.log(geometrica);
+}
+
+
+// Bônus 3 - Agora inverta o lado do triângulo.
+
+let number = 5;
+
+let geometrica = [];
+
+for (let index = number - 1; index >= 0; index -= 1) {
+    geometrica[index] = "*";
+    console.log(geometrica);
+}
