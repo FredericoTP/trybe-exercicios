@@ -16,3 +16,16 @@ for (let index2 = 0; index2 < numbers.length; index2 += 1) {
 }
 
 console.log(factorial);
+
+
+// Exercício 2
+
+let word = 'tryber';
+
+let reverse = '';
+
+for (let index = word.length - 1; index >= 0; index -= 1) {
+    reverse = reverse + word[index];
+}
+
+console.log(reverse);
