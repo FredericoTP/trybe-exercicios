@@ -110,3 +110,88 @@ for ( let index in car) {
     console.log(index, car[index]);
 }
 
+// Function
+
+//Exercício 1
+
+function adicao(number1, number2) {
+    return number1 + number2;
+};
+
+function subtracao(number1, number2) {
+    return number1 - number2;
+};
+
+function multiplicacao(number1, number2) {
+    return number1 * number2;
+};
+
+function divisao(number1, number2) {
+    return number1 / number2;
+};
+
+function modulo(number1, number2) {
+    return number1 % number2;
+}
+
+console.log(adicao(15, 3), subtracao(15, 3), multiplicacao(15, 3), divisao(15, 3), modulo(15, 3));
+
+// Exercício 2
+
+function maiorNumero(number1, number2) {
+    if (number1 > number2) {
+        return number1;
+    } else {
+        return number2;
+    }
+}
+
+console.log(maiorNumero(0, 11));
+
+// Exercício 3
+
+function maiorNumero(number1, number2, number3) {
+    if (number1 > number2 && number1 > number3) {
+        return number1;
+    } else if (number2 > number1 && number2 > number3) {
+        return number2;
+    } else {
+        return number3;
+    }
+}
+
+console.log(maiorNumero(19, 13, 15));
+
+// Exercício 4
+
+function number(number) {
+    if (number > 0) {
+        return "positive";
+    } else if (number < 0) {
+        return "negative";
+    } else {
+        return "zero";
+    }
+}
+
+console.log(number(6));
+
+// Exercício 5
+
+function triangle(angle1, angle2, angle3) {
+    let sumAnle = angle1 + angle2 + angle3;
+
+    let positiveAngle = angle1 > 0 && angle2 > 0 && angle3 > 0;
+
+    if (positiveAngle) {
+        if (sumAnle === 180) {
+            return "true";
+        } else {
+            return "false";
+        };
+    } else {
+        return "erro";
+    }
+}
+
+console.log(triangle(170, 5, 5));
