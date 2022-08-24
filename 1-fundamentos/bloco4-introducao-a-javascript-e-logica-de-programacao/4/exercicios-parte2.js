@@ -72,9 +72,8 @@ console.log(biggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana
 
 // Exercício 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-let numbers = [2, 3, 2, 5, 8, 2, 3];
-
 function repeatedNumbers(numbers) {
+    let indice = 0;
     let num = 0;
     let count = 0;
     let count2 = 0;
@@ -86,8 +85,36 @@ function repeatedNumbers(numbers) {
                 count2 +=1;
             }
         }
+        if (count2 > count) {
+            count = count2;
+            indice = numbers[index];
+
+        }
+        count2 = 0;
+
     }
 
-    return count2;
+    return indice;
 }
-console.log(repeatedNumbers(numbers));
+console.log(repeatedNumbers([2, 3, 2, 5, 8, 2, 3]));
+
+// Exercício 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+function sumNumber(number) {
+    let sum = 0;
+
+    if (number > 0) {
+        for (let index = number; index > 0; index -= 1) {
+            sum += index;
+        }
+    } else {
+        return "erro";
+    }
+
+    return sum;
+}
+
+console.log(sumNumber(5));
+
+// Exercício 7 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+
