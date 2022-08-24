@@ -118,3 +118,30 @@ console.log(sumNumber(5));
 
 // Exercício 7 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
 
+function verificaFimPalavra(word1, word2) {
+
+    let final = [];
+
+    let final2 = [];
+
+
+    if (word1.length > word2.length) {
+        for (let index = word1.length - 1; index >= (word1.length - word2.length); index -= 1) {
+            final.push(word1[index]);
+        }
+    
+        for (let index2 = word2.length - 1; index2 >= 0; index2 -= 1) {
+            final2.push(word2[index2]);
+        }
+    
+        if (JSON.stringify(final) === JSON.stringify(final2)) {
+            return true;
+        }
+    
+        return false;
+    } 
+    
+    return "erro";
+}
+
+console.log(verificaFimPalavra("trybe", "be"));
