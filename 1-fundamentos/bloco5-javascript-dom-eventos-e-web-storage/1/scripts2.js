@@ -51,7 +51,20 @@ function upperCase() {
     for (let index = 0; index < str.length; index += 1) {
         str[index].innerText = str[index].innerText.toUpperCase();
     }
-    
+
 }
 
 upperCase();
+
+// Exercício 6
+
+function exibeParagrafo() {
+    let str = document.getElementsByTagName("p");
+
+    for (let index = 0; index < str.length; index += 1) {
+        console.log(str[index].innerHTML);
+    }
+
+}
+
+exibeParagrafo();
