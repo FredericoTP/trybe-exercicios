@@ -26,3 +26,11 @@ function changeBackColor(color) {
 }
 
 changeBackColor("rgb(76,164,109");
+
+// Exercício 3
+
+function changeBackColor2(color) {
+    document.getElementsByClassName("center-content")[0].style.backgroundColor = color;
+}
+
+changeBackColor2("White");
