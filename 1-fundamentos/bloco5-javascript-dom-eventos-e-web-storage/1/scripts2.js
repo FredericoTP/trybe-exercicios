@@ -34,3 +34,11 @@ function changeBackColor2(color) {
 }
 
 changeBackColor2("White");
+
+// Exercício 4
+
+function changeTitle(text) {
+    document.getElementsByClassName("title")[0].innerText = text;
+}
+
+changeTitle("Exercício 5.1 - JavaScript");
