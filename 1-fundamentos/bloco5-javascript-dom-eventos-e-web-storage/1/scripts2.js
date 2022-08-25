@@ -42,3 +42,16 @@ function changeTitle(text) {
 }
 
 changeTitle("Exercício 5.1 - JavaScript");
+
+// Exercício 5
+
+function upperCase() {
+    let str = document.getElementsByTagName("p");
+
+    for (let index = 0; index < str.length; index += 1) {
+        str[index].innerText = str[index].innerText.toUpperCase();
+    }
+    
+}
+
+upperCase();
