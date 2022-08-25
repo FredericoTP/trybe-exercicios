@@ -11,8 +11,18 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 
+// Exercício 1
+
 function changeText(text) {
     document.getElementsByTagName("p")[1].innerText = text;
 }
 
 changeText("Olá, eu sou o Fred e espero ter adquirido bastante conhecimento durante esses dois anos.");
+
+// Exercício 2
+
+function changeBackColor(color) {
+    document.getElementsByClassName("main-content")[0].style.backgroundColor = color;
+}
+
+changeBackColor("rgb(76,164,109");
