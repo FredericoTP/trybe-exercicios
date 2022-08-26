@@ -68,3 +68,26 @@ elementoOndeVoceEsta.children[0].appendChild(filhoPrimeiroFilhoDoFilho);
 let filhoCriado = document.getElementsByClassName("filho-primeiroFilhoDoFilho");
 
 let terceiroFilho3 = filhoCriado[0].parentElement.parentElement.parentElement.children[2];
+
+
+// Parte 3
+
+// Exercício - Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
+let remove1 = document.getElementById("segundoEUltimoFilhoDoFilho");
+let remove2 = document.getElementsByClassName("filho-elementoOndeVoceEsta");
+let remove3 = document.getElementById("terceiroFilho");
+let remove4 = document.getElementById("quartoEUltimoFilho");
+let remove5 = document.getElementsByClassName("irmao-elementoOndeVoceEsta");
+let remove6 = document.getElementById("primeiroFilho");
+let remove7 = document.getElementsByClassName("filho-primeiroFilhoDoFilho");
+
+
+elementoOndeVoceEsta.removeChild(remove1);
+elementoOndeVoceEsta.removeChild(remove2[0]);
+
+pai.removeChild(remove6);
+pai.removeChild(remove3);
+pai.removeChild(remove4);
+pai.removeChild(remove5[0]);
+elementoOndeVoceEsta.children[0].removeChild(remove7[0]);
