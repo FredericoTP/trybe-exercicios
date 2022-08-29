@@ -21,25 +21,44 @@ createDaysOfTheWeek();
 
 let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-let listDays = document.getElementById("days");
 
-for (let index = 0; index < decemberDaysList.length; index += 1) {
-    let days = decemberDaysList[index];
-    let dayLi = document.createElement("li");
-    dayLi.innerText = days;
-    listDays.appendChild(dayLi);
-}
+function daysOfNovember() {
+    let listDays = document.getElementById("days");
 
-let novemberDay = document.querySelectorAll("#days li");
+    for (let index = 0; index < decemberDaysList.length; index += 1) {
+        let days = decemberDaysList[index];
+        let dayLi = document.createElement("li");
+        dayLi.innerText = days;
+        listDays.appendChild(dayLi);
+    }
 
-for (let index2 = 0; index2 < novemberDay.length; index2 += 1) {
-    novemberDay[index2].className = "day";
-    if (novemberDay[index2].innerText == 24 || novemberDay[index2].innerText == 31) {
-        novemberDay[index2].className = "day holiday";
-    } else if (novemberDay[index2].innerText == 4 || novemberDay[index2].innerText == 11 || novemberDay[index2].innerText == 18) {
-        novemberDay[index2].className = "day friday";
-    } else if (novemberDay[index2].innerText == 25) {
-        novemberDay[index2].className = "day holiday friday";
+    let novemberDay = document.querySelectorAll("#days li");
+
+    for (let index2 = 0; index2 < novemberDay.length; index2 += 1) {
+        if (novemberDay[index2].innerText == 24 || novemberDay[index2].innerText == 31) {
+            novemberDay[index2].className = "day holiday";
+        } else if (novemberDay[index2].innerText == 4 || novemberDay[index2].innerText == 11 || novemberDay[index2].innerText == 18) {
+            novemberDay[index2].className = "day friday";
+        } else if (novemberDay[index2].innerText == 25) {
+            novemberDay[index2].className = "day holiday friday";
+        } else novemberDay[index2].className = "day";
     }
 }
 
+daysOfNovember();
+
+// Exercício 2 - Implemente uma função que crie dinamicamente um botão com o nome "Feriados".
+//   Sua função deve receber um parâmetro com a string 'Feriados'
+//   Adicione a este botão a ID "btn-holiday"
+//   Adicione este botão como filho/filha da tag <div> com classe "buttons-container"
+
+function createButton(string) {
+    const divButtons = document.querySelectorAll(".buttons-container");
+    const button = document.createElement("button");
+    button.innerText = string;
+    button.id = "btn-holiday";
+    divButtons[0].appendChild(button);
+
+}
+
+createButton("Feriados");
