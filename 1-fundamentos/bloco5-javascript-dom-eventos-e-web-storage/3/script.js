@@ -62,3 +62,24 @@ function createButton(string) {
 }
 
 createButton("Feriados");
+
+// Exercício 3 - Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday".
+//   Adicione ao botão "Feriados" um evento de "click" que altere a cor de fundo dos dias que possuem a classe "holiday"
+//   É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial com a cor "rgb(238,238,238)".
+
+const buttonHoliday = document.querySelector("#btn-holiday");
+
+function clickHolidayButton() {
+    let holiday = document.getElementsByClassName("holiday");
+    let color = "aquamarine";
+
+    for (let index = 0; index < holiday.length; index += 1) {
+        if (holiday[index].style.backgroundColor == color) {
+            holiday[index].style.backgroundColor = "rgb(238,238,238)";
+        } else {
+            holiday[index].style.backgroundColor = "aquamarine";
+        }
+    }
+}
+
+buttonHoliday.addEventListener("click", clickHolidayButton);
