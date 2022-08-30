@@ -9,7 +9,7 @@ let listBgColors = ["White","Black", "Silver", "SkyBlue", "DarkSlateGray", "Nava
 
 let listTextColors = ["White", "Black", "Red", "Indigo", "SkyBlue", "Honeydew"];
 
-let listFontSize = ["5px", "10px", "25px", "20px", "25px", "30px"];
+let listFontSize = ["5px", "10px", "15px", "20px", "25px", "30px"];
 
 let listLineHeight = ["3px", "6px", "9px", "12px", "15px", "18px"];
 
@@ -24,6 +24,7 @@ function createButton(list, element) {
         let listItem = list[index];
         let button = document.createElement("button");
         button.innerText = listItem;
+        button.className = `button`;
         element.appendChild(button);
     }
 }
@@ -34,8 +35,47 @@ createButton(listFontSize, fontSize);
 createButton(listLineHeight, lineHeight);
 createButton(listFontName, fontName);
 
-const buttons = document.querySelectorAll("button");
+let bgColorButtons = document.querySelectorAll("#background-color button");
 
-for (let index2 = 0; index2 < buttons.length; index2 += 1) {
-    buttons[index2].className = "button";
+function setBackgroundColor(color) {
+    let content = document.querySelector("#content");
+    content.style.backgroundColor = color;
+    localStorage.setItem("backgroundColor", color);
 }
+
+for (let index = 0; index < bgColorButtons.length; index += 1) {
+    bgColorButtons[index].addEventListener("click", function(event) {
+      setBackgroundColor(event.target.innerHTML);
+    })
+}
+
+let textColorButtons = document.querySelectorAll("#text-color");
+
+function setTextColor(color) {
+    let content = document.querySelector("#content");
+    content.style.color = color;
+    localStorage.setItem("textColor", color);
+}
+
+for (let index = 0; index < textColorButtons.length; index += 1) {
+    textColorButtons[index].addEventListener("click", function(event) {
+        setTextColor(event.target.innerHTML);
+    })
+}
+
+
+
+
+function initialize() {
+    let backgroundColor = localStorage.getItem("backgroundColor");
+    if (backgroundColor) {
+        setBackgroundColor(backgroundColor);
+    }
+
+    let textColor = localStorage.getItem("textColor");
+    if (textColor) {
+        setTextColor(textColor);
+    }
+}
+
+initialize()
