@@ -7,3 +7,18 @@ body {
     text-align: center;
     padding: 10px;
 }
+
+#preferences {
+    text-align: center;
+}
+
+#background-color, #text-color, #font-size, #line-height, #font-name {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+
+.button {
+    margin: 5px;
+}

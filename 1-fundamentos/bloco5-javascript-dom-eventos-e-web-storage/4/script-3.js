@@ -15,9 +15,11 @@ let listLineHeight = ["3px", "6px", "9px", "12px", "15px", "18px"];
 
 let listFontName = ["Arial", "Monaco", "Copperplate", "Times New Roman", "Lucida Handwriting"];
 
+let listClassName = ["button-bgColor", "button-textColor", "button-fontSize", "button-lineHeight", "button-fontName"];
+
+
 
 function createButton(list, element) {
-    
     for (let index = 0; index < list.length; index += 1) {
         let listItem = list[index];
         let button = document.createElement("button");
@@ -31,3 +33,9 @@ createButton(listTextColors, textColor);
 createButton(listFontSize, fontSize);
 createButton(listLineHeight, lineHeight);
 createButton(listFontName, fontName);
+
+const buttons = document.querySelectorAll("button");
+
+for (let index2 = 0; index2 < buttons.length; index2 += 1) {
+    buttons[index2].className = "button";
+}
