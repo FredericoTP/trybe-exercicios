@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
