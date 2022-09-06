@@ -13,3 +13,11 @@ HREF_LINK.addEventListener('click', function(event) {
 INPUT_CHECKBOX.addEventListener('click', function(event) {
     event.preventDefault();
 })
+
+// 3 - Adicione um evento keypress no elemento input type="text" que possui o id input-text. Na função do evento, implemente o método .preventDefault() de forma que somente o caractere a (letra 'a' minúscula) possa ser digitado na caixinha. (dica: para capturar a tecla digitada, utilize o event.key)
+
+INPUT_TEXT.addEventListener('keypress', function(event) {
+    if (event.key !== 'a') {
+        event.preventDefault();
+    }
+})
