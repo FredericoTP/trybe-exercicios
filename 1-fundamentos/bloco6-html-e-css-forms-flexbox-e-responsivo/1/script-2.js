@@ -7,3 +7,9 @@ const HREF_LINK = document.querySelector("#href");
 HREF_LINK.addEventListener('click', function(event) {
     event.preventDefault();
 })
+
+// 2 - Adicione um evento click no elemento checkbox que possui o id input-checkbox. Na função do evento, implemente o método .preventDefault() para previnir o comportamento padrão do elemento. Ou seja, ao clicar na caixinha, nada deve acontecer.
+
+INPUT_CHECKBOX.addEventListener('click', function(event) {
+    event.preventDefault();
+})
