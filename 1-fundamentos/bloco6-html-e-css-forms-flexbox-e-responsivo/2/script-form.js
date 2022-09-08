@@ -24,7 +24,7 @@ const nome = document.getElementById('name');
 const email = document.getElementById('email');
 const textMotivo = document.getElementById('text-motivo');
 
-buttonSubmit.addEventListener('click', function(event) {
+buttonSubmit.addEventListener('click', function (event) {
     if (checkboxDireitoImagem.checked === false) {
         alert('Concorde com o uso de imagens!')
         event.preventDefault();
@@ -36,3 +36,4 @@ buttonSubmit.addEventListener('click', function(event) {
     }
 })
 
+var picker = new Pikaday({ field: document.getElementById('data') });
