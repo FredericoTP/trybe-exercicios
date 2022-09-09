@@ -17,3 +17,12 @@
 #trybe-logo {
   width: 60px;
 }
+
+#section1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: aliceblue
+}
