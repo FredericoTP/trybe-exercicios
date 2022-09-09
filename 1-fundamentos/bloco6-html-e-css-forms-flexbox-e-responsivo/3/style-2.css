@@ -14,5 +14,10 @@
   .box-container {
     background-color: #0fa36b;
     display: flex;
-    /* ADICIONE AQUI SEUS TESTES */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
   }
