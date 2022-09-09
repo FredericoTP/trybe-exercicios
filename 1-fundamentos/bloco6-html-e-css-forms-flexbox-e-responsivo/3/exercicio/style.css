@@ -26,3 +26,28 @@
   height: 60px;
   background-color: aliceblue
 }
+
+#tech {
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+}
+
+.div-tech {
+  background-color: lightgrey;
+  margin: 5px;
+  border: 3px solid silver;
+  border-radius: 10%;
+}
+
+.div-tech h3 {
+  margin: 20px 0 10px;
+}
+
+.logos {
+  width: 200px;
+  margin: 0 10px;
+}
