@@ -18,6 +18,11 @@
   width: 60px;
 }
 
+#sign-up {
+  color: white;
+  font-weight: 900;
+}
+
 #section1 {
   display: flex;
   flex-flow: row nowrap;
@@ -50,4 +55,25 @@
 .logos {
   width: 200px;
   margin: 0 10px;
+}
+
+#footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  
+  margin: 10px auto;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#line {
+  width: 226px;
+  border: 3px solid silver;
+  height: 0;
+}
+
+.logo-footer {
+  width: 30px;
+  margin: 15px 5px;
 }
