@@ -5,15 +5,15 @@
   font-family: 'Ubuntu';
 }
 
-.header-img {
-  width: 70px;
+#header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
 }
 
-.gallery-img {
-  width: 150px;
-}
-
-.social-img {
-  width: 25px;
-  margin-left: 10px;
+#trybe-logo {
+  width: 60px;
 }
