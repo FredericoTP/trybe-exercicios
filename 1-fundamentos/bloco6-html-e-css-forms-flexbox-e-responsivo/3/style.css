@@ -24,5 +24,7 @@
     /* flex-direction: column-reverse; */
     /* flex-wrap: nowrap; */
     /* flex-wrap: wrap; */
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row-reverse wrap; */
+    flex-flow: row wrap-reverse;
   }
