@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+#header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+}
+
+#trybe-logo {
+  width: 60px;
+}
+
+#sign-up {
+  color: white;
+  font-weight: 900;
+}
+
+#section1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: aliceblue
+}
+
+#tech {
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+}
+
+.div-tech {
+  background-color: lightgrey;
+  margin: 5px;
+  border: 3px solid silver;
+  border-radius: 10%;
+}
+
+.div-tech h3 {
+  margin: 20px 0 10px;
+}
+
+.logos {
+  width: 200px;
+  margin: 0 10px;
+}
+
+#footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  
+  margin: 10px auto;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#line {
+  width: 226px;
+  border: 3px solid silver;
+  height: 0;
+}
+
+.logo-footer {
+  width: 30px;
+  margin: 15px 5px;
+}
