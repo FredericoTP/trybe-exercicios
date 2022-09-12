@@ -8,6 +8,18 @@
 
 /* 4 - Utilize a propriedade align-self no elemento correto */
 
+/* Parte 2 */
+
+/* 1 - Aplique uma base de 350px para seu container aside.  */
+
+/* 2 - Aplique um alinhamento para centralizar e outro para expandir. */
+
+/* 3 - Adicione uma propriedade que faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card. */
+
+/* 4 - Aplique uma propriedade com o valor 10 que expanda o container de filmes. */
+
+/* 5 - Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco. */
+
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +73,8 @@ body {
 .movie-container {
   display: flex;
   flex-direction: column;
+  flex-basis: 700px;
+  flex-grow: 10;
 }
 
 .movie-container h2 {
@@ -82,12 +96,17 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
+  flex-basis: 16%;
+  flex-grow: 1;
 }
 
 .aside-container {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  flex-basis: 350px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .aside-container h3,
