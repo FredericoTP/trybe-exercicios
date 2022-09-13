@@ -1,6 +1,9 @@
 /* * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 * apply a natural box layout model to all elements, but allowing components to change */
 
+/* 1 - Faça o tamanho da fonte ser maior; */
+
+
 html {
   box-sizing: border-box;
 }
@@ -10,7 +13,7 @@ html {
 }
 
 body {
-
+  font-size: 20px;
 }
 
 article {
