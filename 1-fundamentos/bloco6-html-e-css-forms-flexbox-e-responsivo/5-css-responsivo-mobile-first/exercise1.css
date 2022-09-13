@@ -3,6 +3,8 @@
 
 /* 1 - Faça o tamanho da fonte ser maior; */
 
+/* 2 - Faça o tamanho da fonte dos elementos h1 ser menor; */
+
 
 html {
   box-sizing: border-box;
@@ -13,7 +15,7 @@ html {
 }
 
 body {
-  font-size: 20px;
+  font-size: large;
 }
 
 article {
@@ -21,7 +23,7 @@ article {
 }
 
 h1 {
-
+  font-size: xx-large;
 }
   
 h2 {
