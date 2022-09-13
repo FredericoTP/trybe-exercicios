@@ -17,6 +17,14 @@ Ajuste o tamanho da fonte;
 Ajuste as margens da página; 
 Faça as imagens serem mostradas em duas colunas.  */
 
+/* 7 - Agora, você vai criar outro breakpoint para telas grandes. Redimensione sua tela de novo para encontrar um novo breakpoint. */
+
+/* 8 - Crie uma nova media query no seu arquivo CSS usando a dimensão que você encontrou para telas grandes (por exemplo 1300px), e realize os seguintes ajustes dentro do breakpoint:
+Altere a cor de fundo; 
+Ajuste o tamanho da fonte; 
+Ajuste as margens da página; 
+Adicione a propriedade max-width à página, para garantir que a largura das linhas não fique muito grande.  */
+
 html {
   box-sizing: border-box;
 }
@@ -86,6 +94,19 @@ figcaption {
   }
 
   figure {
-    max-width: 42%;
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: azure;
+    font-size: large;
+    margin: 40px 80px;
+  }
+
+  p {
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }
