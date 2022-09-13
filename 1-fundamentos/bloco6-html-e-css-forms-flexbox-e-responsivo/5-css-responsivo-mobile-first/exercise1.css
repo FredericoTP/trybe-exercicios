@@ -5,6 +5,7 @@
 
 /* 2 - Faça o tamanho da fonte dos elementos h1 ser menor; */
 
+/* 3 - Aumente o espaçamento entre as figuras; */
 
 html {
   box-sizing: border-box;
@@ -43,7 +44,7 @@ section {
 }
   
 figure {
-  margin: 0;
+  margin: 30px;
 }
   
 figcaption {
