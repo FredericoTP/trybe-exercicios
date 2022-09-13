@@ -9,6 +9,14 @@
 
 /* 4 - Adicione um pouco de margin na página. */
 
+/* 5 - Guarde a largura da tela no ponto que você identificou que o layout atual não funcionou bem (por exemplo 800px). Esse será o primeiro breakpoint do layout. Um breakpoint é apenas um ponto onde estamos definindo que o design atual deve mudar; */
+
+/* 6 - Crie uma media query no seu arquivo CSS, usando a dimensão em pixels que você guardou como o min-width do teste da media query. Dentro desse breakpoint, adicione os seguintes ajustes:
+Altere a cor de fundo (isso vai te ajudar a perceber quando a media query teve efeito);
+Ajuste o tamanho da fonte; 
+Ajuste as margens da página; 
+Faça as imagens serem mostradas em duas colunas.  */
+
 html {
   box-sizing: border-box;
 }
@@ -36,7 +44,7 @@ h1 {
 }
   
 h2 {
-
+  font-size: x-large;
 }
 
 img {
@@ -48,14 +56,36 @@ main {
   margin: 10px 20px;
 }
   
-section {
-
-}
-  
 figure {
   margin: 30px;
 }
   
 figcaption {
   font-size: .8em;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: antiquewhite;
+    font-size: x-large;
+    margin: 25px 50px;
+  }
+
+  h1 {
+    font-size: xxx-large;
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  figure {
+    max-width: 42%;
+  }
 }
