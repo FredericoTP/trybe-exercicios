@@ -5,3 +5,17 @@
 // Imprima no terminal “Esse é o fatorial resultado da função“ (Lembre-se de utilizar template literals nesse momento). 
 // Bônus: tente fazer o mesmo exercício de forma recursiva. Spoiler: É possível resolver com uma linha usando ternary operator. 
 
+const factorial = number => {
+  let result = number;
+  for (let index = number - 1; index > 0; index -= 1) {
+    result *= index;
+  }
+  return `Esse é o fatorial ${result}`;
+}
+
+console.log(factorial(5));
+
+
+const factorial = number => number > 1 ? number * factorial(number - 1) : 1;
+
+console.log(`Esse é o fatorial ${factorial(5)}`);
