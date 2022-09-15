@@ -45,4 +45,3 @@ const maiorPalavra = frase => {
 }
 
 console.log(maiorPalavra('Antônio foi ao banheiro e não sabemos o que aconteceu'));
-
