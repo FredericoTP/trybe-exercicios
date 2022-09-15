@@ -4,7 +4,7 @@ const btnClick = document.getElementById('btn');
 const contador = document.getElementById('contador');
 
 btnClick.addEventListener('click', () => {
-    let resultado = parseInt(contador.innerText);
-    resultado += 1;
-    contador.innerText = resultado;
+    let clickCount = parseInt(contador.innerText, 10);
+    clickCount += 1;
+    contador.innerText = clickCount;
 })
