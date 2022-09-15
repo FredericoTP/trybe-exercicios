@@ -34,12 +34,12 @@ const sortOddsAndEvens = () => {
       }
     }
   }
-  return oddsAndEvens;
+  return `Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`;
 }
 
 console.log(sortOddsAndEvens());
 
 
-// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-// oddsAndEvens.sort((a, b) => a - b);
-// console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+oddsAndEvens.sort((a, b) => a - b);
+console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
