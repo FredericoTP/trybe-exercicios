@@ -22,3 +22,5 @@ function decode(text) {
 
   return caracters.join('');
 }
+
+module.exports = {encode, decode};
