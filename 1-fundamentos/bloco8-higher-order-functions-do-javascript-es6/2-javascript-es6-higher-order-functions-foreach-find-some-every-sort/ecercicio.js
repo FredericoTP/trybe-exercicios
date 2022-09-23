@@ -86,3 +86,13 @@ const lowestTitle = (array) => {
 }
 console.log(lowestTitle(books));
 
+// Encontre o primeiro livro cujo nome possui 26 caracteres. 
+
+const getNameBook = (array, size) => {
+  const book = array.find((element) => element.name.length === size);
+
+  return book.name;
+}
+
+console.log(getNameBook(books, 26));
+
