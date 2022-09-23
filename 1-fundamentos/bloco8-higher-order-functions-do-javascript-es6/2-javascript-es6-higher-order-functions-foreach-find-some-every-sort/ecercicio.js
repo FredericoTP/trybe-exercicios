@@ -71,3 +71,18 @@ const firstPerson1947 = (array) => {
 
 console.log(firstPerson1947(books));
 
+// Retorne o nome do livro de menor nome. 
+
+const lowestTitle = (array) => {
+  let length = array[0].name.length;
+  let name = ''
+  array.forEach((element) => {
+    if (element.name.length < length) {
+      length = element.name.length;
+      name = element.name;
+    }
+  });
+  return name;
+}
+console.log(lowestTitle(books));
+
