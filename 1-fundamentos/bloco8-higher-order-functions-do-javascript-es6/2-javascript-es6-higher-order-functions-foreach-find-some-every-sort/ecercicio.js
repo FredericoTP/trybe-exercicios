@@ -61,7 +61,7 @@ const books = [
   },
 ];
 
-// Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947. 
+// 1- Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947. 
 
 const firstPerson1947 = (array) => {
   const person = array.find((element) => element.author.birthYear === 1947);
@@ -71,7 +71,7 @@ const firstPerson1947 = (array) => {
 
 console.log(firstPerson1947(books));
 
-// Retorne o nome do livro de menor nome. 
+// 2- Retorne o nome do livro de menor nome. 
 
 const lowestTitle = (array) => {
   let length = array[0].name.length;
@@ -86,7 +86,7 @@ const lowestTitle = (array) => {
 }
 console.log(lowestTitle(books));
 
-// Encontre o primeiro livro cujo nome possui 26 caracteres. 
+// 3- Encontre o primeiro livro cujo nome possui 26 caracteres. 
 
 const getNameBook = (array, size) => {
   const book = array.find((element) => element.name.length === size);
@@ -95,4 +95,11 @@ const getNameBook = (array, size) => {
 }
 
 console.log(getNameBook(books, 26));
+
+// 4- Ordene os livros por data de lançamento em ordem decrescente. 
+
+books.sort((a, b) => a.releaseYear < b.releaseYear ? 1 : -1);
+
+
+console.log(books);
 
