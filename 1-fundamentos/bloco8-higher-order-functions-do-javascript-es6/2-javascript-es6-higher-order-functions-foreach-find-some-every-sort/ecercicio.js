@@ -119,3 +119,20 @@ const bookRelease = (array) => {
 
 console.log(bookRelease(books));
 
+// 7- Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário. 
+
+const authorEqualBirth = (array) => {
+  let equalBirth = false
+  array.forEach((element, position, array2) => {
+    let number = element.author.birthYear;
+    array2.forEach((element2, position2) => {
+      if (element2.author.birthYear === number && position !== position2) {
+        equalBirth = true;
+      }
+    })
+  });
+
+  return equalBirth;
+}
+
+console.log(authorEqualBirth(books));
