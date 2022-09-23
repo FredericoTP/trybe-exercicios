@@ -1,3 +1,5 @@
+// forEach
+
 // Use o método forEach chamando a callback showEmailList para apresentar os emails 
 
 const emailListInData = [
@@ -12,6 +14,8 @@ const showEmailList = (email) => {
 };
 
 console.log(emailListInData.forEach(showEmailList));
+
+// find
 
 // Utilize o find para retornar o primeiro número do array que é divisível por 3 e 5, caso ele exista: 
 
@@ -50,4 +54,16 @@ function findMusic(id) {
 };
 
 console.log(findMusic('31031685'));
+
+// some
+
+// Escreva uma função que recebe dois parâmetros: o primeiro um array de nomes e o segundo, um nome qualquer. Essa função deve retornar true se o segundo parâmetro - um nome qualquer - estiver contido no primeiro parâmetro - array de nomes. Caso não esteja contido, deve retornar false. 
+
+const names2 = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+
+const hasName = (arr, name) => {
+  return arr.some((element) => element === name);
+};
+
+console.log(hasName(names2, 'Ana'));
 
