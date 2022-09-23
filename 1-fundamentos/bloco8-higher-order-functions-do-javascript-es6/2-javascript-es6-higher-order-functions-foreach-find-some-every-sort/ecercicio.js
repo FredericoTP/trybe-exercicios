@@ -111,3 +111,11 @@ const birthAuthorXX = (array) => {
 
 console.log(birthAuthorXX(books));
 
+// 6- Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário. 
+
+const bookRelease = (array) => {
+  return array.some((element) => element.releaseYear >= 1980 && element.releaseYear <= 1989);
+}
+
+console.log(bookRelease(books));
+
