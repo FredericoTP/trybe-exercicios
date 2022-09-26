@@ -67,7 +67,7 @@ function formatedBookNames() {
   return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
 }
 
-console.log(formatedBookNames());
+// console.log(formatedBookNames());
 
 // 2- Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age, com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha, considerando suas idades quando o livro foi lançado.
 
@@ -78,7 +78,7 @@ function nameAndAge() {
   return nameAge;
 }
 
-console.log(nameAndAge());
+// console.log(nameAndAge());
 
 // 3- Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia. 
 
@@ -86,5 +86,16 @@ function fantasyOrScienceFiction() {
   return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 }
 
-console.log(fantasyOrScienceFiction());
+// console.log(fantasyOrScienceFiction());
+
+// 4- Crie um array formado pelos livros com mais de 60 anos desde sua publicação. Esse array deve ser ordenado do livro mais velho ao mais novo.
+
+function oldBooksOrdered() {
+  const ageBook = books.filter((book) => (2022 - book.releaseYear) > 60);
+  ageBook.sort((a, b) => a.releaseYear > b.releaseYear ? 1 : -1);
+
+  return ageBook;
+}
+
+console.log(oldBooksOrdered());
 
