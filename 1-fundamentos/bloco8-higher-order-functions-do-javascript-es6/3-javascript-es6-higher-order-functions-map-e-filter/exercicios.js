@@ -105,5 +105,14 @@ function fantasyOrScienceFictionAuthors() {
   return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia').map((book) => book.author.name).sort();
 }
 
-console.log(fantasyOrScienceFictionAuthors());
+// console.log(fantasyOrScienceFictionAuthors());
+
+// 6- Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+
+
+function oldBooks() {
+  return books.filter((book) => (2022 - book.releaseYear) > 60).map((book) => book.name);
+}
+
+console.log(oldBooks());
 
