@@ -35,3 +35,21 @@ describe('testando function oldBooksOrdered', () => {
     expect(oldBooksOrdered()).toEqual([{id: 6, name: 'O Chamado de Cthulhu', genre: 'Terror', author: { name: 'H. P. Lovecraft', birthYear: 1890 }, releaseYear: 1928}, {id: 3, name: 'Fundação', genre: 'Ficção Científica', author: { name: 'Isaac Asimov', birthYear: 1920 }, releaseYear: 1951}, {id: 2, name: 'O Senhor dos Anéis', genre: 'Fantasia', author: { name: 'J. R. R. Tolkien', birthYear: 1892 }, releaseYear: 1954}]);
   });
 });
+
+describe('testando function fantasyOrScienceFictionAuthors', () => {
+  it('is function', () => {
+    expect(typeof fantasyOrScienceFictionAuthors).toBe('function');
+  });
+  it('returns the right answer when called', () => {
+    expect(fantasyOrScienceFictionAuthors()).toEqual(['Frank Herbert', 'George R. R. Martin', 'Isaac Asimov', 'J. R. R. Tolkien']);
+  });
+});
+
+describe('testando function oldBooks', () => {
+  it('is function', () => {
+    expect(typeof oldBooks).toBe('function');
+  });
+  it('returns the right answer when called', () => {
+    expect(oldBooks()).toEqual([ 'O Senhor dos Anéis', 'Fundação', 'O Chamado de Cthulhu' ]);
+  });
+});

@@ -114,7 +114,7 @@ function oldBooks() {
   return books.filter((book) => (2022 - book.releaseYear) > 60).map((book) => book.name);
 }
 
-// console.log(oldBooks());
+console.log(oldBooks());
 
 // 7- Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais. 
 
