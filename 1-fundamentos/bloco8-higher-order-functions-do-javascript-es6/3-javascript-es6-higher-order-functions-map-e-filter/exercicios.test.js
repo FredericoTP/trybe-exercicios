@@ -53,3 +53,12 @@ describe('testando function oldBooks', () => {
     expect(oldBooks()).toEqual([ 'O Senhor dos Anéis', 'Fundação', 'O Chamado de Cthulhu' ]);
   });
 });
+
+describe('testando function authorWith3DotsOnName', () => {
+  it('is function', () => {
+    expect(typeof authorWith3DotsOnName).toBe('function');
+  });
+  it('returns the right answer when called', () => {
+    expect(authorWith3DotsOnName()).toEqual([ 'O Senhor dos Anéis' ]);
+  });
+});
