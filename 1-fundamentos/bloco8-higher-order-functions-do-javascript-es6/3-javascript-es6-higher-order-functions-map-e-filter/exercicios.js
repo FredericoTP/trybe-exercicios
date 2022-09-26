@@ -67,7 +67,7 @@ function formatedBookNames() {
   return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
 }
 
-// console.log(formatedBookNames());
+console.log(formatedBookNames());
 
 // 2- Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age, com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha, considerando suas idades quando o livro foi lançado.
 
@@ -78,7 +78,7 @@ function nameAndAge() {
   return nameAge;
 }
 
-// console.log(nameAndAge());
+console.log(nameAndAge());
 
 // 3- Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia. 
 
@@ -86,7 +86,7 @@ function fantasyOrScienceFiction() {
   return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 }
 
-// console.log(fantasyOrScienceFiction());
+console.log(fantasyOrScienceFiction());
 
 // 4- Crie um array formado pelos livros com mais de 60 anos desde sua publicação. Esse array deve ser ordenado do livro mais velho ao mais novo.
 
@@ -97,7 +97,7 @@ function oldBooksOrdered() {
   return ageBook;
 }
 
-// console.log(oldBooksOrdered());
+console.log(oldBooksOrdered());
 
 // 5- Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
 
@@ -105,7 +105,7 @@ function fantasyOrScienceFictionAuthors() {
   return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia').map((book) => book.author.name).sort();
 }
 
-// console.log(fantasyOrScienceFictionAuthors());
+console.log(fantasyOrScienceFictionAuthors());
 
 // 6- Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 
@@ -116,3 +116,12 @@ function oldBooks() {
 
 console.log(oldBooks());
 
+// 7- Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais. 
+
+function authorWith3DotsOnName() {
+  const name = books.filter((book) => book.author.name[1] === '.' && book.author.name[4] === '.' && book.author.name[7] === '.').map((book) => book.name);
+
+  return name
+}
+
+console.log(authorWith3DotsOnName());
