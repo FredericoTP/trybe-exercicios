@@ -1,0 +1,15 @@
+{
+  "name": "4-javascript-es6-higher-order-functions-reduce",
+  "version": "1.0.0",
+  "description": "Bloco 08: Higher Order Functions do JavaScript ES6",
+  "main": "exercicio-1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}
