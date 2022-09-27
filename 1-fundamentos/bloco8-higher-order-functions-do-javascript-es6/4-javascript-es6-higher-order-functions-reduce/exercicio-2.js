@@ -89,3 +89,5 @@ function longestNamedBook() {
 }
 
 // console.log(longestNamedBook());
+
+module.exports = {reduceNames, averageAge, longestNamedBook};
