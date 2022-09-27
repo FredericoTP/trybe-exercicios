@@ -18,3 +18,5 @@ function containsA() {
 }
 
 // console.log(containsA());
+
+module.exports = {containsA};
