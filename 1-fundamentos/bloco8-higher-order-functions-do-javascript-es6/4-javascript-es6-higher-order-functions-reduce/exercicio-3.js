@@ -7,6 +7,14 @@ const names = [
 ];
 
 function containsA() {
-  
+  return names.reduce((acc, curr) => {
+    let count = 0;
+    for (let index = 0; index < curr.length; index += 1) {
+      curr[index].toLowerCase() === 'a' ? count += 1 : count;
+    };
+
+    return acc + count
+  }, 0);
 }
 
+console.log(containsA());
