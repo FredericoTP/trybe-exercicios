@@ -12,4 +12,6 @@ function studentAverage() {
   return object;
 }
 
-console.log(studentAverage());
+// console.log(studentAverage());
+
+module.exports = {studentAverage};
