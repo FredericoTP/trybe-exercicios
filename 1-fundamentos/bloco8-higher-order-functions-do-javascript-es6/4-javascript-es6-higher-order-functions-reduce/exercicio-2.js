@@ -65,3 +65,27 @@ const books = [
 
 // Crie uma string com os nomes de todas as pessoas autoras.
 
+function reduceNames() {
+  const name = books.map((book) => book.author.name);
+  return name.reduce((acc, curr) => `${acc}, ${curr}`);
+}
+
+// console.log(reduceNames());
+
+// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados. 
+
+function averageAge() {
+  const authorAgeRelease = books.map((book) => book.releaseYear - book.author.birthYear);
+
+  return authorAgeRelease.reduce((acc, curr) => acc + curr, 0) / authorAgeRelease.length;
+}
+
+// console.log(averageAge());
+
+// Encontre o livro com o maior nome. 
+
+function longestNamedBook() {
+  return books.reduce((acc, curr) => curr.name.length > acc.name.length ? curr : acc);
+}
+
+// console.log(longestNamedBook());
