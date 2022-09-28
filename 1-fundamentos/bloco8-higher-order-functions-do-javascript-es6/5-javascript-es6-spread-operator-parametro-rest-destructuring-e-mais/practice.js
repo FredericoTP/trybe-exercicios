@@ -87,6 +87,7 @@ const otherPerson = {
 // console.log(getNationality(person));
 
 // 5-  Object Property Shorthand
+
 // Altere a função getPosition utilizando a property shorthand.
 
 const getPosition = (latitude, longitude) => ({
@@ -96,3 +97,10 @@ const getPosition = (latitude, longitude) => ({
 
 // console.log(getPosition(-19.8157, -43.9542));
 
+// 6- Default Parameters
+
+//Para praticar, escreva uma função multiply que multiplique dois números passados como argumentos. Atribua como default o valor 1, caso não seja passado nenhum valor como segundo parâmetro.
+
+const multiply = (number, value = 1) => number * value;
+
+// console.log(multiply(8));
