@@ -1,5 +1,7 @@
 // Observe o código abaixo e responda: qual é a ordem de finalização de execução das linhas comentadas?
 
+// A, C e depois B.
+
 const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
   `${name} está a ${value} ${measurementUnit} de distância do Sol`;
 
