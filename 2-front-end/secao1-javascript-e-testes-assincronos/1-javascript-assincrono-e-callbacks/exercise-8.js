@@ -37,7 +37,11 @@ function getPokemonDetails(selectedPokemon, callback) {
 }
 
 const handlePokemonSearch = (error, message) => {
-  // Implemente a callback de tratamento de erro
+  if (error === null) {
+    console.log(message);
+  } else {
+    console.log(error);
+  }
 };
 
-getPokemonDetails(/* selectedPokemon*/, handlePokemonSearch);
+getPokemonDetails('Charmander', handlePokemonSearch);
