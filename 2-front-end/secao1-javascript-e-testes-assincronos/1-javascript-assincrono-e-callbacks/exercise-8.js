@@ -45,3 +45,5 @@ const handlePokemonSearch = (error, message) => {
 };
 
 getPokemonDetails('Charmander', handlePokemonSearch);
+
+module.exports = { getPokemonDetails };
