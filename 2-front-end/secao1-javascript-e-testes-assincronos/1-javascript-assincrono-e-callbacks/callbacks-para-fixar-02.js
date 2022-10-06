@@ -7,16 +7,14 @@ const userNationality = ({ firstName, nationality }) => `${firstName} é ${natio
 
 const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
 
-const getUser = (/* callback */) => {
+const getUser = (callback) => {
   setTimeout(() => {
     const user = {
       firstName: 'Ivan',
       lastName: 'Ivanovich',
       nationality: 'Russo',
     };
-
-    // Dica: use esse `console.log()` abaixo para imprimir o resultado na tela.
-    console.log(user);
+    console.log(callback(user));
   }, delay());
 };
 
