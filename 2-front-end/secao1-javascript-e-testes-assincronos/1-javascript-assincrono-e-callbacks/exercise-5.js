@@ -11,13 +11,11 @@ const getMarsTemperature = () => {
 
 const toFahrenheit = (degreeCelsius) => (degreeCelsius * (9 / 5)) + 32;
 
-const temperatureInFahrenheit = (temperature) =>
-  console.log(`Atualmente está ${toFahrenheit(temperature)}ºF em Marte`);
+const temperatureInFahrenheit = (temperature) => console.log(`Atualmente está ${toFahrenheit(temperature)}ºF em Marte`);
 
-const greet = (temperature) =>
-  console.log(`Olá! Curiosity aqui. Nesse momento está ${temperature}ºC em Marte`);
+const greet = (temperature) => console.log(`Olá! Curiosity aqui. Nesse momento está ${temperature}ºC em Marte`);
 
-// Definição da função sendMarsTemperature...
+const sendMarsTemperature = (callback) => setTimeout(() => callback(getMarsTemperature()), messageDelay());
 
 sendMarsTemperature(temperatureInFahrenheit);
 sendMarsTemperature(greet);
