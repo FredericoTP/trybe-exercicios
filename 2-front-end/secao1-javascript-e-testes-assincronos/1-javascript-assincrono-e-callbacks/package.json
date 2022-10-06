@@ -1,0 +1,15 @@
+{
+  "name": "1-javascript-assincrono-e-callbacks",
+  "version": "1.0.0",
+  "description": "Seção 01: JavaScript e Testes Assíncronos",
+  "main": "callback-errors.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}
