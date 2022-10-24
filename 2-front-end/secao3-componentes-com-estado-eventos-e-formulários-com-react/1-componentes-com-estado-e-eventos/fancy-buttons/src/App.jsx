@@ -5,29 +5,43 @@ class App extends React.Component {
 
   constructor() {
     super()
+
+    this.state = {
+      btnOne: 0,
+      btnTwo: 0,
+      btnThree: 0,
+    }
+
     this.handleClickBtnOne = this.handleClickBtnOne.bind(this);
     this.handleClickBtnTwo = this.handleClickBtnTwo.bind(this);
     this.handleClickBtnThree = this.handleClickBtnThree.bind(this);
   }
 
   handleClickBtnOne() {
-    console.log('Hello, World');
+    this.setState((stateBefore, _props) => ({
+      btnOne: stateBefore.btnOne + 1,
+    }))
   }
   
   handleClickBtnTwo() {
-    console.log('My name is');
+    this.setState((stateBefore, _props) => ({
+      btnTwo: stateBefore.btnTwo + 1,
+    }))
   }
   
   handleClickBtnThree() {
-    console.log('Fred');
+    this.setState((stateBefore, _props) => ({
+      btnThree: stateBefore.btnThree +1,
+    }))
   }
 
   render() {
+    const { btnOne, btnTwo, btnThree } = this.state;
     return (
       <>
-        <button type='button' onClick={ this.handleClickBtnOne }>Um</button>
-        <button type='button' onClick={ this.handleClickBtnTwo }>Dois</button>
-        <button type='button' onClick={ this.handleClickBtnThree }>Três</button>
+        <button type='button' onClick={ this.handleClickBtnOne }>{ btnOne }</button>
+        <button type='button' onClick={ this.handleClickBtnTwo }>{ btnTwo }</button>
+        <button type='button' onClick={ this.handleClickBtnThree }>{ btnThree }</button>
       </>
     )
   }
