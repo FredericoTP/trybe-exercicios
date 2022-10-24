@@ -15,6 +15,7 @@ class App extends React.Component {
     this.handleClickBtnOne = this.handleClickBtnOne.bind(this);
     this.handleClickBtnTwo = this.handleClickBtnTwo.bind(this);
     this.handleClickBtnThree = this.handleClickBtnThree.bind(this);
+    this.getButtonColor = this.getButtonColor.bind(this);
   }
 
   handleClickBtnOne() {
@@ -35,13 +36,20 @@ class App extends React.Component {
     }))
   }
 
+  getButtonColor(num) {
+    if (num % 2 === 0) {
+      return 'green';
+    }
+    return 'white';
+  }
+
   render() {
     const { btnOne, btnTwo, btnThree } = this.state;
     return (
       <>
-        <button type='button' onClick={ this.handleClickBtnOne }>{ btnOne }</button>
-        <button type='button' onClick={ this.handleClickBtnTwo }>{ btnTwo }</button>
-        <button type='button' onClick={ this.handleClickBtnThree }>{ btnThree }</button>
+        <button type='button' style={ {backgroundColor: this.getButtonColor(btnOne)} } onClick={ this.handleClickBtnOne }>{ btnOne }</button>
+        <button type='button' style={ {backgroundColor: this.getButtonColor(btnTwo)} } onClick={ this.handleClickBtnTwo }>{ btnTwo }</button>
+        <button type='button' style={ {backgroundColor: this.getButtonColor(btnThree)} } onClick={ this.handleClickBtnThree }>{ btnThree }</button>
       </>
     )
   }
