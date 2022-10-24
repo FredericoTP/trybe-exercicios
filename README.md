@@ -83,23 +83,28 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 2: Introdução ao React
 
-- [x] 12-1: _'Hello, world!' no React!_
-- [x] 12-2: _Componentes React_
-- [x] 12-3: _[Projeto - Solar System]()_
+- [x] 2-1: _'Hello, world!' no React!_
+- [x] 2-2: _Componentes React_
+- [x] 2-3: _[Projeto - Solar System]()_
 
-##### Bloco 13: React
+##### Seção 3: Componentes com Estado, Eventos e Formulários com react
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 3-1: _Componentes com estado e eventos_
+- [ ] 3-2: _Formulários no React_
+- [ ] 3-3: _[Projeto - tryunfo]()_
 
-##### Bloco 14: Metodologias Ágeis
+##### Seção 4: Ciclo de Vida de Componentes e React Router
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [ ] 4-1: _Ciclo de vida de componentes_
+- [ ] 4-2: _React Router_
+- [ ] 4-3: _[Projeto - TrybeTunes]()_
 
-##### Bloco 15: Testes em React
+##### Seção 5: Metodologias Ágeis
+
+- [ ] 5-1: _Metodologias Ágeis_
+- [ ] 5-2: _[Projeto - Front-end Online Store]()_
+
+##### Seção 15: Testes em React
 
 - [ ] 15-1: _Testando React com a React Testing Library_
 - [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
