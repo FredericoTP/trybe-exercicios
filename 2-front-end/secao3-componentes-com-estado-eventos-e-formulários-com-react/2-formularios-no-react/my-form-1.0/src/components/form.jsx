@@ -1,4 +1,6 @@
 import React from 'react';
+import SelectCor from './SelectCor';
+import FavoriteFood from './FavoriteFood';
 
 class Form extends React.Component {
   constructor() {
@@ -29,6 +31,7 @@ class Form extends React.Component {
     return (
       <form>
         <fieldset>
+          <legend>Forms</legend>
 
           <label htmlFor="inputName">
             Nome:
@@ -40,19 +43,9 @@ class Form extends React.Component {
             <input name="inputEmail" type="text" id="inputEmail"value={ this.state.inputEmail } onChange={ this.handleChange }/>
           </label>
 
-          <label htmlFor="favoriteFood">
-            Comida favorita:
-            <textarea name="favoriteFood" id="favoriteFood" cols="20" rows="5" value={ this.state.favoriteFood } onChange={ this.handleChange }></textarea>
-          </label>
+          <FavoriteFood value={ this.state.favoriteFood } handleChange={ this.handleChange } />
 
-          <label htmlFor="selectCor">
-            Escolha uma cor:
-            <select name="color" id="selectCor" value={ this.state.color } onChange={ this.handleChange }>
-              <option value="verde">Verde</option>
-              <option value="vermelho">Vermelho</option>
-              <option value="azul">Azul</option>
-            </select>
-          </label>
+          <SelectCor value={ this.state.color } handleChange={ this.handleChange } />
 
           <label htmlFor="inputCheckbox">
             Você desenha?
@@ -63,7 +56,7 @@ class Form extends React.Component {
             Escolha uma foto
             <input type="file" />
           </label>
-          
+
         </fieldset>
       </form>
     );
