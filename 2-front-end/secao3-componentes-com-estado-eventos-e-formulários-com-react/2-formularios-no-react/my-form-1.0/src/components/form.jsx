@@ -1,12 +1,28 @@
 import React from 'react';
 
 class Form extends React.Component {
+  constructor() {
+    super()
+
+    this.state = {
+      inputName: '',
+    }
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      inputName: event.target.value,
+    })
+  }
+
   render() {
     return (
       <form>
         <label htmlFor="inputName">
           Nome:
-          <input type="text" id="inputName"/>
+          <input name="inputName" type="text" id="inputName" value={ this.state.inputName } onChange={ this.handleChange } />
         </label>
 
         <label htmlFor="inputEmail">
