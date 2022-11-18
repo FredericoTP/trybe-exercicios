@@ -9,6 +9,7 @@ class App extends React.Component {
     };
     
     this.fetchJoke = this.fetchJoke.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   componentDidMount() {
@@ -23,12 +24,17 @@ class App extends React.Component {
       .then((data) => this.setState({ joke: data.joke }));
   }
 
+  onClick() {
+    this.fetchJoke();
+  }
+
   render() {
     const { joke } = this.state;
 
     return (
       <div className="App">
         <p>{joke}</p>
+        <button onClick={ this.onClick } >New Joke</button>
       </div>
     );
   }
