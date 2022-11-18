@@ -25,3 +25,20 @@ it('fetches a joke', async () => {
     { headers: { Accept: 'application/json' } },
   );
 });
+
+it('Verifica funcionalidade da API e do botão', async () => {
+  const joke = {
+    id: '7h3oGtrOfxc',
+    joke: 'Whiteboards ... are remarkable.',
+    status: 200,
+  };
+
+  jest.spyOn(global, 'fetch');
+  global.fetch.mockResolvedValue({
+    json: jest.fn().mockResolvedValue(joke),
+  });
+
+  render(<App />);
+  const renderedJoke = await screen.findByText('Whiteboards ... are remarkable.');
+  expect(renderedJoke).toBeInTheDocument();
+});
