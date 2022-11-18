@@ -41,4 +41,5 @@ it('Verifica funcionalidade da API e do botão', async () => {
   render(<App />);
   const renderedJoke = await screen.findByText('Whiteboards ... are remarkable.');
   expect(renderedJoke).toBeInTheDocument();
+  expect(global.fetch).toHaveBeenCalledTimes(1);
 });
