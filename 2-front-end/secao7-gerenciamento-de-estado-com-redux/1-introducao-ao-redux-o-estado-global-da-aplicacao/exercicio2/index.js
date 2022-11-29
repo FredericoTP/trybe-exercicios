@@ -1,5 +1,6 @@
 import { legacy_createStore as createStore } from "redux";
 import { composeWithDevTools } from "@redux-devtools/extension";
+import { combineReducers } from "redux";
 
 const THEME_INITIAL_STATE = {
   theme: 'dark',
@@ -22,6 +23,8 @@ const statusReducer = (state = STATUS_INITIAL_STATE, action) => {
       return state;
   }
 };
+
+const rootReducer = combineReducers({ theme: themeReducer, status: statusReducer });
 
 const themeButton = document.getElementById('toggle-theme');
 const statusButton = document.getElementById('toggle-status');
