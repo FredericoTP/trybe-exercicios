@@ -107,18 +107,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 6: Testes automatizados com React Testing Library
 
 - [x] 6-1: _RTL - Primeiros passos_
-- [ ] 6-2: _RTL - Mocks e Inputs_
-- [ ] 6-3: _RTL - Testando React Router_
-- [ ] 6-3: _[Projeto - Testes em React]()_
+- [x] 6-2: _RTL - Mocks e Inputs_
+- [x] 6-3: _RTL - Testando React Router_
+- [x] 6-3: _[Projeto - Testes em React]()_
 
-##### Bloco 16: Introdução ao Redux
+##### Seção 7: Gerenciamento de estado com Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [x] 7-1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] 7-2: _Usando o Redux no React_
+- [ ] 7-3: _Usando o Redux no React - Prática_
+- [ ] 7-4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] 7-5: _Testes em React-Redux_
+- [ ] 7-6: _[Projeto - Trybe Wallet]()_
 
 ##### Bloco 17: Projeto React
 
