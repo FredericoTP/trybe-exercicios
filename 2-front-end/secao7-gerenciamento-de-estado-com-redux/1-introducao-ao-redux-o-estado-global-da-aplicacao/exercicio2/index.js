@@ -8,6 +8,10 @@ const THEME_INITIAL_STATE = {
 
 const themeReducer = (state = THEME_INITIAL_STATE, action) => {
   switch (action.type) {
+    case "CHANGE_THEME":
+      return (
+        state.theme === "dark" ? ({ ...state, theme: "light" }) : ({ ...state, theme: "light" })
+      );
     default:
       return state;
   }
@@ -19,6 +23,10 @@ const STATUS_INITIAL_STATE = {
 
 const statusReducer = (state = STATUS_INITIAL_STATE, action) => {
   switch (action.type) {
+    case "CHANGE_STATUS":
+      return (
+        state.theme === "offline" ? ({ ...state, status: "online" }) : ({ ...state, status: "offline" })
+      );
     default:
       return state;
   }
