@@ -9,9 +9,13 @@ const INITIAL_STATE = {
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "NEXT_COLOR":
-      return { index: state.index + 1 };
+      return (
+        state.index >= state.colors.length - 1 ? ({ ...state, index: state.colors.length - 1 }) : ({ ...state, index: state.index + 1 })
+      );
     case "PREVIOUS_COLOR":
-      return { index: state.index - 1 };
+      return (
+        state.index <= 0 ? ({ ...state, index: 0 }) : ({ ...state, index: state.index - 1 })
+      );
     default:
       return state;
   };
@@ -31,4 +35,13 @@ previousButton.addEventListener("click", () => {
 const nextButton = document.querySelector("#next");
 nextButton.addEventListener("click", () => {
   store.dispatch(actionNext);
+});
+
+store.subscribe(() => {
+  const globalState = store.getState();
+
+  const colorElement = document.querySelector("#value");
+  colorElement.innerHTML = globalState.colors[globalState.index];
+  const containerElement = document.querySelector("#container");
+  containerElement.style.backgroundColor = globalState.colors[globalState.index];
 });
