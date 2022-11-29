@@ -1,4 +1,5 @@
 import { legacy_createStore as createStore } from "redux";
+import { composeWithDevTools } from "@redux-devtools/extension";
 
 const INITIAL_STATE = {
   colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
@@ -7,9 +8,13 @@ const INITIAL_STATE = {
 
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case 'NEXT_COLOR':
+      return { index: state.index + 1 };
+    case 'PREVIOUS_COLOR':
+      return { index: state.index - 1 };
     default:
       return state;
   };
 };
 
-const state = createStore(reducer);
+const state = createStore(reducer, composeWithDevTools());
