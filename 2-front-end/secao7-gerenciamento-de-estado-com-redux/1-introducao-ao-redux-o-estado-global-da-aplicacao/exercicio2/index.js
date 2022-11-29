@@ -26,6 +26,8 @@ const statusReducer = (state = STATUS_INITIAL_STATE, action) => {
 
 const rootReducer = combineReducers({ theme: themeReducer, status: statusReducer });
 
+const store = createStore(rootReducer, composeWithDevTools());
+
 const themeButton = document.getElementById('toggle-theme');
 const statusButton = document.getElementById('toggle-status');
 
