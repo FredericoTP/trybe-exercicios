@@ -5,4 +5,11 @@ const INITIAL_STATE = {
   index: 0,
 };
 
-const state = createStore();
+const reducer = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  };
+};
+
+const state = createStore(reducer);
