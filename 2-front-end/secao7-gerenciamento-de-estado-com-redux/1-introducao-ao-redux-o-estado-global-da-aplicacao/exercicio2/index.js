@@ -49,3 +49,27 @@ const statusButton = document.getElementById('toggle-status');
 statusButton.addEventListener("click", () => {
   store.dispatch(actionStatus);
 });
+
+store.subscribe(() => {
+  const globalState = store.getState();
+
+  const statusElement = document.querySelector("#status");
+  statusElement.innerHTML = globalState.status.status;
+
+  const body = document.getElementsByTagName("body");
+  if (globalState.theme.theme === "light") {
+    body[0].style.backgroundColor = "white";
+    body[0].style.color = "black";
+    themeButton.innerText = "Dark Mode"
+  } else {
+    body[0].style.backgroundColor = "#333";
+    body[0].style.color = "white";
+    themeButton.innerText = "Light Mode"
+  }
+
+  if (globalState.status.status === "offline") {
+    statusButton.innerText = "Ficar Online"
+  } else {
+    statusButton.innerText = "Ficar Offline"
+  }
+});
