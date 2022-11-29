@@ -10,7 +10,7 @@ const themeReducer = (state = THEME_INITIAL_STATE, action) => {
   switch (action.type) {
     case "CHANGE_THEME":
       return (
-        state.theme === "dark" ? ({ ...state, theme: "light" }) : ({ ...state, theme: "light" })
+        state.theme === "dark" ? ({ ...state, theme: "light" }) : ({ ...state, theme: "dark" })
       );
     default:
       return state;
@@ -25,7 +25,7 @@ const statusReducer = (state = STATUS_INITIAL_STATE, action) => {
   switch (action.type) {
     case "CHANGE_STATUS":
       return (
-        state.theme === "offline" ? ({ ...state, status: "online" }) : ({ ...state, status: "offline" })
+        state.status === "offline" ? ({ ...state, status: "online" }) : ({ ...state, status: "offline" })
       );
     default:
       return state;
@@ -36,13 +36,16 @@ const rootReducer = combineReducers({ theme: themeReducer, status: statusReducer
 
 const store = createStore(rootReducer, composeWithDevTools());
 
-const themeButton = document.getElementById('toggle-theme');
-const statusButton = document.getElementById('toggle-status');
+const actionTheme = { type: "CHANGE_THEME" };
 
-themeButton.addEventListener('click', () => {
-  // coloque o código aqui.
+const actionStatus = { type: "CHANGE_STATUS" };
+
+const themeButton = document.getElementById('toggle-theme');
+themeButton.addEventListener("click", () => {
+  store.dispatch(actionTheme);
 });
 
-statusButton.addEventListener('click', () => {
-  // coloque o código aqui.
+const statusButton = document.getElementById('toggle-status');
+statusButton.addEventListener("click", () => {
+  store.dispatch(actionStatus);
 });
