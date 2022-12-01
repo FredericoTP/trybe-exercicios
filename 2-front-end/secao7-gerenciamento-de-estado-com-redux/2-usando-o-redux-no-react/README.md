@@ -1,6 +1,6 @@
 Seção 07: Gerenciamento de estado com Redux
 
-Dia 01: Introdução ao Redux - O estado global da aplicação
+Dia 02: Usando o Redux no React
 
 Neste dia aprendemos:
 
