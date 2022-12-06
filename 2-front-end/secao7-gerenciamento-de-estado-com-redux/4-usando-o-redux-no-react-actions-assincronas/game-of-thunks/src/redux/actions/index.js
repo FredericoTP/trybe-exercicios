@@ -16,7 +16,6 @@ export function fetchCharacter(name) {
     dispatch(requestApi());
     const response = await fetch(`https://anapioficeandfire.com/api/characters?name=${name}`);
     const result = await response.json();
-    console.log(result);
     dispatch(responseApi(result));
   };
 };

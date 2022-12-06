@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchCharacter } from './redux/actions';
+import CharacterDetails from './components/CharacterDetails';
 
 class App extends React.Component {
   constructor() {
@@ -35,6 +36,7 @@ class App extends React.Component {
         >
           Buscar
         </button>
+        <CharacterDetails />
       </div>
     );
   }
