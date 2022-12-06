@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { connect } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+import { fetchDogImage } from "./redux/actions";
+
+import "./style.css"
+
+class App extends React.Component {
+  render() {
+    const { isFetching, imageURL, dispatch } = this.props;
+
+    if (isFetching) return <p>Carregando...</p>;
+
+    return (
+      <div>
+        <button
+          onClick={() => { dispatch(fetchDogImage()) }}
+          type="button"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          Novo Doguinho
+        </button>
+        {
+          imageURL &&
+          <img
+            src={imageURL}
+            alt="Imagem de um cachorro aleatório"
+          />
+        }
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  imageURL: state.imageURL,
+  isFetching: state.isFetching,
+});
+
+export default connect(mapStateToProps)(App);
