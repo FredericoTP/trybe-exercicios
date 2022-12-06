@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { fetchCharacter } from './redux/actions';
 
 class App extends React.Component {
   constructor() {
@@ -16,6 +18,7 @@ class App extends React.Component {
 
   render() {
     const { character } = this.state;
+    const { dispatch } = this.props;
     return (
       <div>
         <label htmlFor="">Personagem: </label>
@@ -28,6 +31,7 @@ class App extends React.Component {
         <button
           type="button"
           disabled={ character.length === 0 }
+          onClick={ () => dispatch(fetchCharacter(character)) }
         >
           Buscar
         </button>
@@ -36,4 +40,4 @@ class App extends React.Component {
   }
 };
 
-export default App;
+export default connect()(App);
