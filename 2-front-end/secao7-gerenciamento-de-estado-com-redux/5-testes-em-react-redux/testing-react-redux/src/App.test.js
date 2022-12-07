@@ -39,4 +39,29 @@ describe('verifica a aplicação', () => {
     expect(store.getState().counterReducer.count).toBe(6);
   });
   
+  it('Verifica se alterando o estado inicial o botão incrementa corretamente o valor do estado global', () => {
+    const initialState = {
+      counterReducer: {
+        count: 5,
+      },
+    };
+
+    const { store } = renderWithRedux(<App />, { initialState });
+    expect(screen.getByText('5')).toBeInTheDocument();
+    expect(store.getState().counterReducer.count).toBe(5);
+
+    const btnPlus1 = screen.getByRole('button', {  name: /incrementa 1/i});
+    expect(btnPlus1).toBeInTheDocument();
+
+    userEvent.click(btnPlus1);
+    expect(screen.getByText('6')).toBeInTheDocument();
+    expect(store.getState().counterReducer.count).toBe(6);
+
+    const btnPlus5 = screen.getByRole('button', {  name: /incrementa 5/i});
+    expect(btnPlus5).toBeInTheDocument();
+
+    userEvent.click(btnPlus5);
+    expect(screen.getByText('11')).toBeInTheDocument();
+    expect(store.getState().counterReducer.count).toBe(11);
+  });
 });
