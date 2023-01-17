@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import arrayEmails from "./data/emails";
 import './App.css';
 
 function App() {
   const [emails, setEmails] = useState(arrayEmails);
+
+  useEffect(() => {
+    const allEmailRead = emails.every((item) => item.status === 1);
+
+    if (allEmailRead) {
+      alert('Você leu todos os emails!');
+    }
+  }, [emails])
 
   const changeEmailStatusRead = (id) => {
     const updateEmail = emails.map((item) => {
