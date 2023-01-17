@@ -48,32 +48,36 @@ function App() {
   }
 
   return (
-    <div>
-      <header>
+    <div className="content">
+      <header className="header">
         <h1>TrybeMail</h1>
       </header>
-      <div>
-        <button type="button" onClick={ () => changeAllToRead() }>Marcar todos como lidos</button>
-        <button type="button" onClick={ () => changeAllToUnread() }>Marcar todos como não lidos</button>
+      <div className="buttons-all">
+        <button className="buttons" type="button" onClick={ () => changeAllToRead() }>Marcar todos como lidos</button>
+        <button className="buttons" type="button" onClick={ () => changeAllToUnread() }>Marcar todos como não lidos</button>
       </div>
-      <div>
+      <div className="emails-content">
         {emails.map((email) => {
           const {id, tittle, status} = email
           return (
-            <div key={ id }>
+            <div className="email" key={ id }>
               <p className={ status === 0 ? "unread" : "read"}>{ tittle }</p>
-              <button
-                type="button"
-                onClick={ () => changeEmailStatusRead(id) }
-              >
-                Lido
-              </button>
-              <button
-                type="button"
-                onClick={ () => changeEmailStatusUnread(id) }
-              >
-                Não Lido
-              </button>
+              <div>
+                <button
+                  className="buttons"
+                  type="button"
+                  onClick={ () => changeEmailStatusRead(id) }
+                >
+                  Lido
+                </button>
+                <button
+                  className="buttons"
+                  type="button"
+                  onClick={ () => changeEmailStatusUnread(id) }
+                >
+                  Não Lido
+                </button>
+              </div>
             </div>
           )
         })}
