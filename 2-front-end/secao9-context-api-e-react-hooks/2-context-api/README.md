@@ -1,6 +1,6 @@
 Seção 09: Context API e React Hooks
 
-Dia 01: Context API
+Dia 02: Context API
 
 Neste dia aprendemos:
 
