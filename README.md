@@ -72,7 +72,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [x] 8-6: _[Projeto - Zoo functions]()_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Seção 1: JavaScript e Testes Assíncronos
 
@@ -117,33 +117,32 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 7-2: _Usando o Redux no React_
 - [x] 7-3: _Usando o Redux no React - Prática_
 - [x] 7-4: _Usando o Redux no React - Actions Assíncronas_
-- [ ] 7-5: _Testes em React-Redux_
-- [ ] 7-6: _[Projeto - Trybe Wallet]()_
+- [x] 7-5: _Testes em React-Redux_
+- [x] 7-6: _[Projeto - Trybe Wallet]()_
 
-##### Bloco 17: Projeto React
+##### Seção 8: Projeto Jogo de Trivia
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [x] 8-1: _[Projeto - Jogo de Trivia]()_
 
-##### Bloco 18: React & Context API
+##### Seção 9: Context API e React Hooks
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 9-1: _React Hooks - useState e useEffect_
+- [x] 9-2: _Context API_
+- [x] 9-3: _Custom Hooks_
+- [x] 9-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
-##### Bloco 19: Projeto Final de Front-end
+##### Seção 10: Projeto App de Receitas
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 10-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Seção 1: Docker: Utilizando Containers
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 1-1: _Utilizando Containers - Docker_
+- [ ] 1-2: _Manipulando Imagens no Docker_
+- [ ] 1-3: _Orquestrando Containers com Docker Compose_
+- [ ] 1-4: _[Projeto - Docker ToDo-List]()_
 
 ##### Bloco 21: Bancos de dados relacionais
 
