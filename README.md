@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - Lessons Learned]()_
+- [x] 3-5: _[Projeto - Lessons Learned](https://github.com/FredericoTP/trybe-project-01-lessons-learned)_
 
 ##### Seção 4: Introdução - JavaScript
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/FredericoTP/trybe-project-02-playground-functions)_
 
 ##### Seção 5: JavaScript - DOM, Eventos e Web Storage
 
@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [x] 5-5: _[Projeto - Meme Generator]()_
-- [x] 5-6: _[Projeto - Arte com Pixels]()_
-- [x] 5-7: _[Projeto - Lista de tarefas]()_
-- [x] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [x] 5-7: _[Projeto - Carta Misteriosa]()_
+- [x] 5-5: _[Projeto - Meme Generator](https://github.com/FredericoTP/trybe-bonus-project-meme-generator)_
+- [x] 5-6: _[Projeto - Arte com Pixels](https://github.com/FredericoTP/trybe-project-03-pixels-art)_
+- [x] 5-7: _[Projeto - Lista de tarefas](https://github.com/FredericoTP/trybe-bonus-project-todo-list)_
+- [x] 5-7: _[Projeto - Adivinhe a Cor](https://github.com/FredericoTP/trybe-bonus-project-color-guess)_
+- [x] 5-7: _[Projeto - Carta Misteriosa](https://github.com/FredericoTP/trybe-bonus-project-mistery-letter)_
 
 ##### Seção 6: HTML & CSS avançado
 
@@ -54,14 +54,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Part 1_
 - [x] 6-4: _CSS Flexbox - Part 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [x] 6-6: _[Projeto - Trybewarts]()_
+- [x] 6-6: _[Projeto - Trybewarts](https://github.com/FredericoTP/trybe-project-04-trybewarts)_
 
 ##### Seção 7: JavaScript ES6 & Testes Unitários
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Fluxo de exceção e Objects_
 - [x] 7-3: _Testes unitários em JavaScript_
-- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/FredericoTP/trybe-project-05-unit-tests)_
 
 ##### Seção 8: Higher Order Functions do JavaScript ES6
 
@@ -70,7 +70,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [x] 8-6: _[Projeto - Zoo functions]()_
+- [x] 8-6: _[Projeto - Zoo functions](https://github.com/FredericoTP/trybe-project-06-zoo-functions)_
 
 ## Desenvolvimento Front-end :white_check_mark:
 
@@ -79,37 +79,37 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 1-1: _JavaScript Assíncrono e Callbacks_
 - [x] 1-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [x] 1-3: _Jest - Testes Assíncronos_
-- [x] 1-4: _[Projeto - Carrinho de Compras]()_
+- [x] 1-4: _[Projeto - Carrinho de Compras](https://github.com/FredericoTP/trybe-project-07-shopping-cart)_
 
 ##### Seção 2: Introdução ao React
 
 - [x] 2-1: _'Hello, world!' no React!_
 - [x] 2-2: _Componentes React_
-- [x] 2-3: _[Projeto - Solar System]()_
+- [x] 2-3: _[Projeto - Solar System](https://github.com/FredericoTP/trybe-project-08-solar-system)_
 
 ##### Seção 3: Componentes com Estado, Eventos e Formulários com react
 
 - [x] 3-1: _Componentes com estado e eventos_
 - [x] 3-2: _Formulários no React_
-- [x] 3-3: _[Projeto - tryunfo]()_
+- [x] 3-3: _[Projeto - Tryunfo](https://github.com/FredericoTP/trybe-project-09-tryunfo)_
 
 ##### Seção 4: Ciclo de Vida de Componentes e React Router
 
 - [x] 4-1: _Ciclo de vida de componentes_
 - [x] 4-2: _React Router_
-- [x] 4-3: _[Projeto - TrybeTunes]()_
+- [x] 4-3: _[Projeto - TrybeTunes](https://github.com/FredericoTP/trybe-project-10-trybetunes)_
 
 ##### Seção 5: Metodologias Ágeis
 
 - [x] 5-1: _Metodologias Ágeis_
-- [x] 5-2: _[Projeto - Front-end Online Store]()_
+- [x] 5-2: _[Projeto - Front-end Online Store](https://github.com/FredericoTP/trybe-project-11-frontend-online-store)_
 
 ##### Seção 6: Testes automatizados com React Testing Library
 
 - [x] 6-1: _RTL - Primeiros passos_
 - [x] 6-2: _RTL - Mocks e Inputs_
 - [x] 6-3: _RTL - Testando React Router_
-- [x] 6-3: _[Projeto - Testes em React]()_
+- [x] 6-3: _[Projeto - Testes em React](https://github.com/FredericoTP/trybe-project-12-react-testing-library)_
 
 ##### Seção 7: Gerenciamento de estado com Redux
 
@@ -118,22 +118,22 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 7-3: _Usando o Redux no React - Prática_
 - [x] 7-4: _Usando o Redux no React - Actions Assíncronas_
 - [x] 7-5: _Testes em React-Redux_
-- [x] 7-6: _[Projeto - Trybe Wallet]()_
+- [x] 7-6: _[Projeto - Trybe Wallet](https://github.com/FredericoTP/trybe-project-13-trybewallet)_
 
 ##### Seção 8: Projeto Jogo de Trivia
 
-- [x] 8-1: _[Projeto - Jogo de Trivia]()_
+- [x] 8-1: _[Projeto - Jogo de Trivia](https://github.com/FredericoTP/trybe-project-14-trivia)_
 
 ##### Seção 9: Context API e React Hooks
 
 - [x] 9-1: _React Hooks - useState e useEffect_
 - [x] 9-2: _Context API_
 - [x] 9-3: _Custom Hooks_
-- [x] 9-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 9-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/FredericoTP/trybe-project-15-starwars-planets-search)_
 
 ##### Seção 10: Projeto App de Receitas
 
-- [x] 10-1: _[Projeto - App de Receitas]()_
+- [x] 10-1: _[Projeto - App de Receitas](https://github.com/FredericoTP/trybe-project-16-recipes-app)_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
