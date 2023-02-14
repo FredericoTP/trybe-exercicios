@@ -1,0 +1,32 @@
+1- Entre no banco de dados mysql. 
+
+docker container run --name container-mysql -e MYSQL_ROOT_PASSWORD=senha-mysql -d -p 3306:3306 mysql:5.7
+
+docker exec -it container-mysql bash
+
+mysql -u root -p
+(digita a senha)
+
+USE mysql
+
+2- Visualize todas as tabelas desse banco. 
+
+SHOW TABLES;
+
+3- Visualize a estrutura de pelo menos 10 tabelas diferentes e tente entender o tipo de estrutura que costuma ser utilizada.
+
+DESCRIBE user;
+DESCRIBE db;
+DESCRIBE event;
+DESCRIBE func;
+DESCRIBE plugin;
+DESCRIBE proc;
+DESCRIBE servers;
+DESCRIBE slow_log;
+DESCRIBE procs_priv;
+DESCRIBE time_zone;
+
+4- Crie um novo banco de dados com o seu nome e depois entre nele! 
+
+CREATE DATABSES fred;
+USE fred;

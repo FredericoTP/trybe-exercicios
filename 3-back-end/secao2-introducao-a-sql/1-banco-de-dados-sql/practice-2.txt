@@ -1,0 +1,31 @@
+1- Quais constraints a coluna address_id poderia ter? Por quê?
+
+PRIMARY KEY
+
+2- Qual constraint a coluna city_id tem? Qual é o motivo de a coluna city_id não possuir nomes das cidades? 
+
+FOREIGN KEY. Pode haver cidades com o mesmo nome.
+
+3- A coluna address (endereço) possui uma constraint. Qual tipo de constraint seria interessante ser aplicado a ela para que sempre exista um valor na coluna quando uma nova linha for criada? 
+
+NOT NULL
+
+--------------------------
+
+1- Que tipo de constraint a coluna city_id possui? 
+
+PRIMARY KEY
+
+2- Qual é o motivo de a coluna country_id não possuir nomes de country (país)? Ela é algum tipo de chave primária ou estrangeira?
+
+Porque o país se repete.
+
+--------------------------
+
+1- Qual coluna possui uma primary key? 
+
+film_id
+
+2- Qual coluna possui uma foreign key? 
+
+category_id
