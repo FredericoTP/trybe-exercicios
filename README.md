@@ -147,17 +147,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 2: Introdução à SQL
 
 - [x] 2-1: _Banco de dados SQL_
-- [ ] 2-2: _Encontrando dados em um banco de dados_
-- [ ] 2-3: _Filtrando dados de forma específica_
-- [ ] 2-4: _Manipulando tabelas_
-- [ ] 2-5: _[Projeto - All For One]()_
+- [x] 2-2: _Encontrando dados em um banco de dados_
+- [x] 2-3: _Filtrando dados de forma específica_
+- [x] 2-4: _Manipulando tabelas_
+- [x] 2-5: _[Projeto - All For One](https://github.com/FredericoTP/trybe-project-18-mysql-all-for-one)_
 
-##### Bloco 22: Bancos de dados relacionais
+##### Seção 3: Funções SQL, JOINs e Normalização
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [x] 3-1: _Funções mais usadas no SQL_
+- [ ] 3-2: _Descomplicando JOINs_
+- [ ] 3-3: _Transformando ideias em um modelo de banco de dados_
+- [ ] 3-4: _[Projeto - One For All]()_
 
 ##### Bloco 23: Introdução - NoSQL
 
