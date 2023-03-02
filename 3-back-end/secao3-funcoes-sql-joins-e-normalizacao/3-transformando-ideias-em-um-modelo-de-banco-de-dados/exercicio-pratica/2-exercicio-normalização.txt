@@ -1,0 +1,21 @@
+2- Converta a tabela desnormalizada para a 1ª Forma Normal.
+
+residencia --> residencia_id, residencia_locador, tipo, endereco, numero, cidade, estado
+
+inquilino --> inquilino_id, nome, residencia_id
+
+
+3- Converta a tabela desnormalizada para a 2ª Forma Normal.
+
+heroi --> heroi_id, heroi, liga_id, criador_id
+
+liga --> liga_id, liga, universo_id
+
+universo --> universo_id, universo
+
+criador --> criador_id, criador, cidade_idade
+
+
+4- Converta a tabela para a 3ª Forma Normal.
+
+venda --> venda_id, filme_id, valor_unitario, quantidade
