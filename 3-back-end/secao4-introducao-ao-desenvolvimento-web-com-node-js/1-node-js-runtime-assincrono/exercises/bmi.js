@@ -1,6 +1,6 @@
 const readline = require('readline-sync');
 
-const weight = readline.question('What’s your weight? (kg)');
+const weight = readline.questionFloat('What’s your weight? (kg)');
 const height = readline.question('What’s your height? (m)');
 
 function bmiCalculator() {
