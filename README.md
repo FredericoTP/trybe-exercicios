@@ -157,13 +157,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-1: _Funções mais usadas no SQL_
 - [x] 3-2: _Descomplicando JOINs_
 - [x] 3-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 3-4: _[Projeto - One For All]()_
+- [x] 3-4: _[Projeto - One For All]()_
 
-##### Bloco 23: Introdução - NoSQL
+##### Seção 4: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [x] 4-1: _Node.js: Runtime Assíncrono_
+- [ ] 4-2: _Node.js: API REST com Express_
+- [ ] 4-3: _Node.js: Testes de Integração_
+- [ ] 4-4: _Node.js: Express e Middlewares_
+- [ ] 4-5: _Node.js: Express e MySQL_
+- [ ] 4-6: _[Projeto - Talker Manager]()_
 
 ##### Bloco 24: Updates
 
