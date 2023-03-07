@@ -4,9 +4,7 @@ const weight = readline.questionFloat('What’s your weight? (kg)');
 const height = readline.question('What’s your height? (m)');
 
 function bmiCalculator() {
-  const bmi = weight / (height * height);
-
-  console.log(bmi);
+  const bmi = (weight / (height * height)).toFixed(2);
 
   switch (true) {
     case bmi < 18.5:
