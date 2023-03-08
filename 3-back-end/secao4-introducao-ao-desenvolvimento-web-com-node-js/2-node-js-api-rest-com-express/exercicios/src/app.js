@@ -1,5 +1,5 @@
 const express = require('express');
-const { readMovies, addMovie, editMovie, removeMovie } = require('./movies');
+const { readMovies, addMovie, editMovie, removeMovie, findMovieByquery } = require('./movies');
 
 const app = express();
 
@@ -53,6 +53,16 @@ app.delete('/movies/:id', async (req, res) => {
   if (!delMovie) return res.status(500).json({ message: 'Algo inesperado aconteceu!' });
 
   return res.status(204).end();
+});
+
+app.get('/movies/search', (req, res) => {
+  const { q } = req.query;
+
+  const movie = findMovieByquery(q);
+
+  if (movie) return res.status(200).json(movie);
+
+  return res.status(404).end();
 });
 
 module.exports = app;

@@ -51,9 +51,18 @@ async function removeMovie(id) {
   return movies;
 }
 
+async function findMovieByquery(q) {
+  const movies = await readMovies();
+
+  const filteredMovies = movies.filter((element) => element.movie.includes(q));
+
+  return filteredMovies;
+}
+
 module.exports = {
   readMovies,
   addMovie,
   editMovie,
   removeMovie,
+  findMovieByquery,
 };
