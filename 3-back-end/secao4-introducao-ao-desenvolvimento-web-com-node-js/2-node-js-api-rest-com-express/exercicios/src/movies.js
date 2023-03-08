@@ -25,7 +25,22 @@ async function addMovie(object) {
   return movies;
 }
 
+async function editMovie(object, id) {
+  const { movie, price } = object;
+  const movies = await readMovies();
+
+  const findMovie = movies.find((item) => item.id === Number(id));
+
+  findMovie.movie = movie;
+  findMovie.price = price;
+
+  await fs.writeFile(moviesPath, JSON.stringify(movies));
+
+  return findMovie;
+}
+
 module.exports = {
   readMovies,
   addMovie,
+  editMovie,
 };
