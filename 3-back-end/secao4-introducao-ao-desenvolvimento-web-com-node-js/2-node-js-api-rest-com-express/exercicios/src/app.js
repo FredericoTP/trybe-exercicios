@@ -1,5 +1,5 @@
 const express = require('express');
-const { readMovies } = require('./movies');
+const { readMovies, addMovie } = require('./movies');
 
 const app = express();
 
@@ -15,8 +15,17 @@ app.get('/movies/:id', async (req, res) => {
   return res.status(200).json(movieById);
 });
 
-app.get('/movies', async (req, res) => {
+app.get('/movies', async (_req, res) => {
   const movies = await readMovies();
+
+  if (!movies) return res.status(500).json({ message: 'Algo inesperado aconteceu!' });
+
+  return res.status(200).json(movies);
+});
+
+app.post('/movies', async (req, res) => {
+  const object = req.body;
+  const movies = await addMovie((object));
 
   if (!movies) return res.status(500).json({ message: 'Algo inesperado aconteceu!' });
 

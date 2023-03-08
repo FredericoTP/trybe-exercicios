@@ -13,6 +13,19 @@ async function readMovies() {
   }
 }
 
+async function addMovie(object) {
+  const { movie, price } = object;
+  const movies = await readMovies();
+
+  const newMovie = { id: Date.now(), movie, price };
+  movies.push(newMovie);
+
+  await fs.writeFile(moviesPath, JSON.stringify(movies));
+
+  return movies;
+}
+
 module.exports = {
   readMovies,
+  addMovie,
 };
