@@ -39,8 +39,21 @@ async function editMovie(object, id) {
   return findMovie;
 }
 
+async function removeMovie(id) {
+  const movies = await readMovies();
+
+  const position = movies.findIndex((item) => item.id === Number(id));
+
+  movies.splice(position, 1);
+
+  await fs.writeFile(moviesPath, JSON.stringify(movies));
+
+  return movies;
+}
+
 module.exports = {
   readMovies,
   addMovie,
   editMovie,
+  removeMovie,
 };

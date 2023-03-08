@@ -1,5 +1,5 @@
 const express = require('express');
-const { readMovies, addMovie, editMovie } = require('./movies');
+const { readMovies, addMovie, editMovie, removeMovie } = require('./movies');
 
 const app = express();
 
@@ -36,12 +36,23 @@ app.put('/movies/:id', async (req, res) => {
   const { id } = req.params;
   const object = req.body;
 
-  console.log(id);
   const movies = await editMovie(object, id);
 
   if (!movies) return res.status(500).json({ message: 'Algo inesperado aconteceu!' });
 
   return res.status(200).json(movies);
+});
+
+app.delete('/movies/:id', async (req, res) => {
+  const { id } = req.params;
+
+  const delMovie = removeMovie(id);
+
+  console.log(delMovie);
+
+  if (!delMovie) return res.status(500).json({ message: 'Algo inesperado aconteceu!' });
+
+  return res.status(204).end();
 });
 
 module.exports = app;
