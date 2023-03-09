@@ -140,10 +140,10 @@ describe('Testando a API Cacau Trybe', () => {
 
   describe('Usando o método GET em /chocolates/search para buscar chocolates por nome', () => {
     it('Retorna os chocolates por nome', async () => {
-      const response = await chai.request(app).get('/chocolates/search');
+      const response = await chai.request(app).get('/chocolates/search?name=mo');
 
       expect(response.status).to.be.equal(200);
-      expect(response.body.chocolates).to.deep.equal([
+      expect(response.body).to.deep.equal([
         {
           id: 3,
           name: 'Mon Chéri',
@@ -158,10 +158,10 @@ describe('Testando a API Cacau Trybe', () => {
     });
 
     it('Retorna array vazio se não achar nenhum chocolate', async () => {
-      const response = chai.request(app).get('/chocolates.search');
+      const response = await chai.request(app).get('/chocolates/search?name=ye');
 
       expect(response.status).to.be.equal(404);
-      expect(response.body).to.be.equal([]);
+      expect(response.body).to.deep.equal([]);
     });
   });
 });
