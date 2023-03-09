@@ -14,6 +14,17 @@ async function readCacauTrybeFile() {
   }
 }
 
+async function writeCacauTrybeFile(chocolates) {
+  const cacauTrybePath = path.resolve(__dirname, './files/cacauTrybeFile.json');
+
+  try {
+    await fs.writeFile(cacauTrybePath, JSON.stringify(chocolates));
+  } catch (error) {
+    console.log(error.message);
+    return null;
+  }
+}
+
 async function getAllChocolates() {
   const cacauTrybe = await readCacauTrybeFile();
   return cacauTrybe.chocolates;
@@ -48,10 +59,28 @@ async function getChocolatesByName(name) {
   return chocolatesByName;
 }
 
+async function updateChocolateById(id, body) {
+  const cacauTrybe = await readCacauTrybeFile();
+  const chocolateToUpdate = cacauTrybe.chocolates.find((item) => item.id === id);
+
+  if (chocolateToUpdate) {
+    cacauTrybe.chocolates = cacauTrybe.chocolates.map((chocolate) => {
+      if (chocolate.id === id) return { ...chocolate, ...body };
+      return chocolate;
+    });
+
+    await writeCacauTrybeFile(cacauTrybe);
+    return { ...chocolateToUpdate, ...body };
+  }
+
+  return false;
+}
+
 module.exports = {
   getAllChocolates,
   getChocolateById,
   getChocolatesByBrand,
   getTotalChocolates,
   getChocolatesByName,
+  updateChocolateById,
 };
