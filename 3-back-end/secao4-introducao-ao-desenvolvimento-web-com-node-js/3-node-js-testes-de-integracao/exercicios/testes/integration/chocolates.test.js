@@ -124,4 +124,17 @@ describe('Testando a API Cacau Trybe', () => {
       ]);
     });
   });
+
+  describe('Usando o método GET em /chocolates/total para buscar o total de chocolates', () => {
+    it('Retorna o número total de chocolates', async () => {
+      const response = await chai.request(app).get('/chocolates/total');
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal(
+        {
+          totalChocolates: 4,
+        },
+      );
+    });
+  });
 });

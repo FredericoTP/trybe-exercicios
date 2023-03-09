@@ -1,5 +1,7 @@
 const express = require('express');
-const { getAllChocolates, getChocolateById, getChocolatesByBrand } = require('./cacauTrybe');
+const { 
+  getAllChocolates, getChocolateById, getChocolatesByBrand, getTotalChocolates, 
+} = require('./cacauTrybe');
 
 const app = express();
 
@@ -11,6 +13,14 @@ app.get('/chocolates', async (_req, res) => {
   if (!chocolates) return res.status(404).json({ message: 'Algo inesperado aconteceu!' });
 
   return res.status(200).json({ chocolates });
+});
+
+app.get('/chocolates/total', async (_req, res) => {
+  const totalChocolates = await getTotalChocolates();
+
+  if (!totalChocolates) return res.status(404).json({ message: 'Algo inesperado aconteceu!' });
+
+  return res.status(200).json({ totalChocolates });
 });
 
 app.get('/chocolates/:id', async (req, res) => {

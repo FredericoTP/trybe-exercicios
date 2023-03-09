@@ -33,8 +33,16 @@ async function getChocolatesByBrand(brandId) {
   return chocolatesByBrand;
 }
 
+async function getTotalChocolates() {
+  const cacauTrybe = await readCacauTrybeFile();
+  const totalChocolates = cacauTrybe.chocolates.length;
+
+  return totalChocolates;
+}
+
 module.exports = {
   getAllChocolates,
   getChocolateById,
   getChocolatesByBrand,
+  getTotalChocolates,
 };
