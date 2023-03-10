@@ -5,12 +5,9 @@ const teams = [
 
 const existingId = (req, res, next) => {
   const { id } = req.params;
-  const findId = teams.find((item) => item.id === Number(id));
-  if (findId) {
-    next();
-  } else {
-    res.sendStatus(400);
-  }
+  const findId = teams.some((item) => item.id === Number(id));
+  if (!findId) return res.sendStatus(400).json({ message: 'Time não encontrado' });
+  next();
 };
 
 module.exports = existingId;
