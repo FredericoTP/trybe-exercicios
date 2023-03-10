@@ -4,6 +4,7 @@ const nameValidation = require('./middleware/nameValidation');
 const priceValidation = require('./middleware/priceValidation');
 const descriptionValidation = require('./middleware/descriptionValidation');
 const createdAtValidation = require('./middleware/createdAtValidation');
+const ratingValidation = require('./middleware/ratingValidation');
 
 const app = express();
 
@@ -13,7 +14,8 @@ app.post('/activities',
   nameValidation,
   priceValidation,
   descriptionValidation,
-  createdAtValidation, (req, res) => {
+  createdAtValidation,
+  ratingValidation, (req, res) => {
   const object = req.body;
 
   addNewLocation(object);
