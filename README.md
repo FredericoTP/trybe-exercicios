@@ -162,10 +162,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 4: Introdução ao desenvolvimento Web com Node.js
 
 - [x] 4-1: _Node.js: Runtime Assíncrono_
-- [ ] 4-2: _Node.js: API REST com Express_
-- [ ] 4-3: _Node.js: Testes de Integração_
-- [ ] 4-4: _Node.js: Express e Middlewares_
-- [ ] 4-5: _Node.js: Express e MySQL_
+- [x] 4-2: _Node.js: API REST com Express_
+- [x] 4-3: _Node.js: Testes de Integração_
+- [x] 4-4: _Node.js: Express e Middlewares_
+- [x] 4-5: _Node.js: Express e MySQL_
 - [ ] 4-6: _[Projeto - Talker Manager]()_
 
 ##### Bloco 24: Updates
