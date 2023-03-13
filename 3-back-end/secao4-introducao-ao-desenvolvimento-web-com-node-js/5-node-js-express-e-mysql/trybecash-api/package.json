@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "test": "mocha tests/**/*$NAME*.test.js --exit"
+    "start": "env $(cat .env) node src/server.js",
+    "dev": "env $(cat .env) nodemon src/server.js",
+    "test": "env $(cat .env) mocha tests/**/*$NAME*.test.js --exit"
   },
   "keywords": [],
   "author": "",
