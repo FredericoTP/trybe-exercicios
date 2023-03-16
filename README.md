@@ -157,7 +157,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-1: _Funções mais usadas no SQL_
 - [x] 3-2: _Descomplicando JOINs_
 - [x] 3-3: _Transformando ideias em um modelo de banco de dados_
-- [x] 3-4: _[Projeto - One For All]()_
+- [x] 3-4: _[Projeto - One For All](https://github.com/FredericoTP/trybe-project-19-mysql-one-for-all)_
 
 ##### Seção 4: Introdução ao desenvolvimento Web com Node.js
 
@@ -166,14 +166,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-3: _Node.js: Testes de Integração_
 - [x] 4-4: _Node.js: Express e Middlewares_
 - [x] 4-5: _Node.js: Express e MySQL_
-- [ ] 4-6: _[Projeto - Talker Manager]()_
+- [x] 4-6: _[Projeto - Talker Manager](https://github.com/FredericoTP/trybe-project-20-talker-manager)_
 
-##### Bloco 24: Updates
+##### Seção 5: Arquitetura de Software: Model, Service e Controller
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [x] 5-1: _Arquitetura de Software: Camada Model_
+- [ ] 5-2: _Arquitetura de Software: Camada Service_
+- [ ] 5-3: _Arquitetura de Software: Camada Controller_
+- [ ] 5-4: _[Projeto - Store Manager]()_
 
 ##### Bloco 25: Aggregation Framework
 
