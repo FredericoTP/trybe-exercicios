@@ -51,6 +51,18 @@ const updateBook = async (req, res) => {
   }
 }
 
+const deleteBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    await BookService.deleteBook(id);
+
+    return res.status(200).json({ message: "Book deleted!" });
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ message: error500Message });
+  }
+}
+
 module.exports = {
   getAll,
   getById,
