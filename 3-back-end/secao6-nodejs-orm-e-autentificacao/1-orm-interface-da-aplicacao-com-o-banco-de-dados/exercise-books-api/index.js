@@ -8,6 +8,8 @@ app.use(express.json());
 
 app.get('/books', BookController.getAll);
 
+app.post('/books', BookController.createBook);
+
 app.get('/books/:id', BookController.getById);
 
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}!`));
