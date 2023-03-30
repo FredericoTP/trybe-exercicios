@@ -173,20 +173,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-1: _Arquitetura de Software: Camada Model_
 - [x] 5-2: _Arquitetura de Software: Camada Service_
 - [x] 5-3: _Arquitetura de Software: Camada Controller_
-- [ ] 5-4: _[Projeto - Store Manager]()_
+- [x] 5-4: _[Projeto - Store Manager](https://github.com/FredericoTP/trybe-project-21-store-manager)_
 
-##### Bloco 25: Aggregation Framework
+##### Seção 6: Node.js: ORM e Autenticação
 
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [x] 6-1: _ORM - Interface de aplicação com o banco de dados_
+- [ ] 6-2: _ORM - Associations 1:1 e 1:N_
+- [ ] 6-3: _ORM - Association N:N e Transactions_
+- [ ] 6-4: _JWT - (JSON Web Token)_
+- [ ] 6-5: _[Projeto - API de Blogs]()_
 
 ##### Bloco 26: Intro - NodeJS
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Arquitetura_
-- [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [ ] 26-1: _ORM - Interface de aplicação com o banco de dados_
+- [ ] 26-2: _ORM - Associations 1:1 e 1:N_
+- [ ] 26-3: _ORM - Association N:N e Transactions_
+- [ ] 26-3: _JWT - (JSON Web Token)_
+- [ ] 26-4: _[Projeto - API de Blogs]()_
 
 ##### Bloco 27: NodeJS
 
