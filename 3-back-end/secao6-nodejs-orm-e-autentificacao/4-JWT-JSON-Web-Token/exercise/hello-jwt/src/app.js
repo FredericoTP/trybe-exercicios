@@ -24,6 +24,11 @@ app.post('/login', controllers.login);
 
 app.get('/users/me', middlewares.auth, controllers.me);
 
+app.get('/top-secret',
+  middlewares.auth,
+  middlewares.admin,
+  controllers.topSecret);
+
 app.use(middlewares.error);
 
 module.exports = app;
