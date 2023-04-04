@@ -1,40 +1,33 @@
+/* eslint-disable max-lines-per-function */
+const jwt = require('jsonwebtoken');
 const { UserService } = require('../services');
 
-const validateBody = (body, res) => {
-  const { username, password } = body;
+const secret = process.env.JWT_SECRET || 'seusecretdetoken';
 
-  if (!username || !password) {
-    res
-      .status(401)
-      .json({ message: 'É necessário usuário e senha para fazer login' });
-    return false;
-  }
-
-  return true;
-};
-
-const validateUserOrPassword = (user, password, res) => {
-  if (!user || user.password !== password) {
-    res
-      .status(401)
-      .json({ message: 'Usuário não existe ou senha inválida' });
-    return false;
-  }
-
-  return true;
-};
+const isBodyValid = (username, password) => username && password;
 
 module.exports = async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    if (!validateBody(req.body, res)) return;
+    if (!isBodyValid(username, password)) {
+      return res.status(401).json({ message: 'É necessário usuário e senha para fazer login' });
+    }
 
     const user = await UserService.getByUsername(username);
 
-    if (!validateUserOrPassword(user, password, res)) return;
+    if (!user || user.password !== password) {
+      return res.status(401).json({ message: 'Usuário não existe ou senha inválida' });
+    }
 
-    res.status(200).json({ message: 'Login efetuado com sucesso' });
+    const jwtConfig = {
+      expiresIn: '7d',
+      algorithm: 'HS256',
+    };
+
+    const token = jwt.sign({ data: { userId: user.id } }, secret, jwtConfig);
+
+    res.status(200).json({ token });
   } catch (err) {
     return res
       .status(500)
