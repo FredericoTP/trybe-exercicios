@@ -20,6 +20,8 @@ app.use(
 
 app.get('/ping', controllers.ping);
 
+app.post('/login', controllers.login);
+
 app.use(middlewares.error);
 
 module.exports = app;
