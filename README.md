@@ -179,23 +179,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 6-1: _ORM - Interface de aplicação com o banco de dados_
 - [x] 6-2: _ORM - Associations 1:1 e 1:N_
-- [ ] 6-3: _ORM - Association N:N e Transactions_
-- [ ] 6-4: _JWT - (JSON Web Token)_
-- [ ] 6-5: _[Projeto - API de Blogs]()_
+- [x] 6-3: _ORM - Association N:N e Transactions_
+- [x] 6-4: _JWT - (JSON Web Token)_
+- [x] 6-5: _[Projeto - API de Blogs](https://github.com/FredericoTP/trybe-project-22-blogs-api)_
 
-##### Bloco 26: Intro - NodeJS
+##### Seção 7: Masterclass: Implantação de Aplicações na Nuvem
 
-- [ ] 26-1: _ORM - Interface de aplicação com o banco de dados_
-- [ ] 26-2: _ORM - Associations 1:1 e 1:N_
-- [ ] 26-3: _ORM - Association N:N e Transactions_
-- [ ] 26-3: _JWT - (JSON Web Token)_
-- [ ] 26-4: _[Projeto - API de Blogs]()_
+- [x] 7-1: _Infraestrutura: Deploy com Railway_
 
-##### Bloco 27: NodeJS
+##### Seção 8: Introdução a TypeScript
 
-- [ ] 27-1: _Express: HTTP com Node.js_
-- [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [ ] 8-1: _Introdução ao TypeScript_
+- [ ] 8-2: _Tipagem Estática e Generics_
+- [ ] 8-3: _Express com TypeScript_
+- [ ] 8-4: _[Projeto - Trybesmith]()_
 
 ##### Bloco 28: NodeJS
 
