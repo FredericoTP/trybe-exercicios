@@ -31,5 +31,5 @@ export function getTrapeziumArea(baseA: number, baseB: number, height: number): 
 }
 
 export function getCricleArea(radius: number): number {
-  return 3.14 * radius ** 2;
+  return Math.PI * radius ** 2;
 }
