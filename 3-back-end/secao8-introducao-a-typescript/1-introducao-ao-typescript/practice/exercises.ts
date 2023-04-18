@@ -21,3 +21,7 @@ export function triangleCheck(sideA: number, sideB: number, sideC: number): bool
 
   return checkSideA && checkSideB && checkSideC;
 }
+
+export function getRhombusArea(diagonalA: number, diagonalB: number): number {
+  return (diagonalA * diagonalB) / 2;
+}

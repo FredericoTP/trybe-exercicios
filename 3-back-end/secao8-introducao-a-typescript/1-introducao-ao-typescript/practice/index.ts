@@ -14,6 +14,10 @@ console.log(`- Triângulo de base 10cm e altura 25cm: ${Ex.getTriangleArea(10, 2
 console.log(`- Triângulo de base 5cm e altura 30cm: ${Ex.getTriangleArea(5, 30)}cm²`);
 console.log(`- Triângulo de base 100cm e altura 200cm: ${Ex.getTriangleArea(100, 200)}cm²`);
 
+console.log(`- Losango de diagonal maior 32cm e diagonal menor 18cm: ${Ex.getRhombusArea(32, 18)}cm²`);
+console.log(`- Losango de diagonal maior 200cm e diagonal menor 50cm: ${Ex.getRhombusArea(200, 50)}cm²`);
+console.log(`- Losango de diagonal maior 75cm e diagonal menor 25cm: ${Ex.getRhombusArea(75, 25)}cm²`);
+
 console.log("\nO PERÍMETRO DE UM:");
 
 console.log(`- Quadrado de lado 10cm: ${Ex.getPolygonPerimeter([10, 10, 10, 10])}cm`);
