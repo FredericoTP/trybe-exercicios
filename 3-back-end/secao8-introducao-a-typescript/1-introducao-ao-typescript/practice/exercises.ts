@@ -25,3 +25,7 @@ export function triangleCheck(sideA: number, sideB: number, sideC: number): bool
 export function getRhombusArea(diagonalA: number, diagonalB: number): number {
   return (diagonalA * diagonalB) / 2;
 }
+
+export function getTrapeziumArea(baseA: number, baseB: number, height: number): number {
+  return ((baseA + baseB) * height) / 2;
+}
