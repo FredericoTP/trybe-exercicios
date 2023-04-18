@@ -18,9 +18,13 @@ console.log(`- Losango de diagonal maior 32cm e diagonal menor 18cm: ${Ex.getRho
 console.log(`- Losango de diagonal maior 200cm e diagonal menor 50cm: ${Ex.getRhombusArea(200, 50)}cm²`);
 console.log(`- Losango de diagonal maior 75cm e diagonal menor 25cm: ${Ex.getRhombusArea(75, 25)}cm²`);
 
-console.log(`- Trapézio de base maior 100cm, base menor 70cm e altura 50cm: ${Ex.getTrapeziumArea(100, 70, 50)}`);
-console.log(`- Trapézio de base maior 75cm, base menor 50cm e altura 35cm: ${Ex.getTrapeziumArea(75, 50, 35)}`);
-console.log(`- Trapézio de base maior 150cm, base menor 120cm e altura 80cm: ${Ex.getTrapeziumArea(150, 120, 80)}`);
+console.log(`- Trapézio de base maior 100cm, base menor 70cm e altura 50cm: ${Ex.getTrapeziumArea(100, 70, 50)}cm²`);
+console.log(`- Trapézio de base maior 75cm, base menor 50cm e altura 35cm: ${Ex.getTrapeziumArea(75, 50, 35)}cm²`);
+console.log(`- Trapézio de base maior 150cm, base menor 120cm e altura 80cm: ${Ex.getTrapeziumArea(150, 120, 80)}cm²`);
+
+console.log(`- Círculo de raio 25cm: ${Ex.getCricleArea(25)}cm²`);
+console.log(`- Círculo de raio 100cm: ${Ex.getCricleArea(100)}cm²`);
+console.log(`- Círculo de raio 12,5cm: ${Ex.getCricleArea(12.5)}cm²`);
 
 console.log("\nO PERÍMETRO DE UM:");
 

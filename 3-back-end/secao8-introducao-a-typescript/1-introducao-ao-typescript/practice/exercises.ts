@@ -29,3 +29,7 @@ export function getRhombusArea(diagonalA: number, diagonalB: number): number {
 export function getTrapeziumArea(baseA: number, baseB: number, height: number): number {
   return ((baseA + baseB) * height) / 2;
 }
+
+export function getCricleArea(radius: number): number {
+  return 3.14 * radius ** 2;
+}
