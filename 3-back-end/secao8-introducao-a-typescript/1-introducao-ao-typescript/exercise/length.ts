@@ -1,6 +1,6 @@
 const units: string[] = ['km', 'hm', 'dam', 'm', 'dm', 'cm', 'mm'];
 
-function convert(value: number, fromUnit: string, toUnit: string): number {
+function convertLength(value: number, fromUnit: string, toUnit: string): number {
   const fromIndex = units.indexOf(fromUnit);
   const toIndex = units.indexOf(toUnit);
   const exponent = toIndex - fromIndex;
@@ -8,4 +8,4 @@ function convert(value: number, fromUnit: string, toUnit: string): number {
   return value * Math.pow(10, exponent);
 }
 
-console.log(convert(5, 'm', 'km'));
+console.log(convertLength(5, 'm', 'km'));
