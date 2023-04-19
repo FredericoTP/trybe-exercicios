@@ -1,4 +1,4 @@
-Seção 07: Introdução a TypeScript
+Seção 08: Introdução a TypeScript
 
 Dia 01: Introdução ao TypeScript
 
