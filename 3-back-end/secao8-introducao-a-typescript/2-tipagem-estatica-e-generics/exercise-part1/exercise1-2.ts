@@ -37,3 +37,31 @@ class Car {
     console.log(`Virando para a ${direction}`);
   }
 }
+
+const car1 = new Car('volkswagen - gol', 'prata', 4);
+car1.turnOn();
+car1.speedUp();
+car1.speedDown();
+car1.turn('esquerda');
+car1.speedUp();
+car1.speedDown();
+car1.turn('direita');
+car1.speedUp();
+car1.speedDown();
+car1.turn('direita');
+car1.speedUp();
+car1.speedDown();
+car1.stop();
+car1.speedUp();
+car1.speedDown();
+car1.turn('direita');
+car1.speedUp();
+car1.speedDown();
+car1.turn('esquerda');
+car1.speedUp();
+car1.speedDown();
+car1.turn('direita');
+car1.speedUp();
+car1.speedDown();
+car1.stop();
+car1.speedUp();
