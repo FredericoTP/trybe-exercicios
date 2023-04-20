@@ -50,6 +50,14 @@ class BooksController {
 
     res.status(statusCodes.NO_CONTENT).end();
   }
+
+  async partialUpdate(req: Request, res: Response): Promise<void> {
+    const id = Number(req.params.id);
+    const book = req.body;
+    await this.bookService.partialUpdate(id, book);
+
+    res.status(statusCodes.NO_CONTENT).end();
+  }
 }
 
 export default BooksController;

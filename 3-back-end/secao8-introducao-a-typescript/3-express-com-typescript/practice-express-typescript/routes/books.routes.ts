@@ -15,6 +15,8 @@ router.put('/books/:id', booksController.update);
 
 router.delete('/books/:id', booksController.remove);
 
+router.patch('/books/:id', booksController.partialUpdate);
+
 // alternativa ao uso do bind
 // router.get('/books', (req, res) => booksController.getAll(req, res));
 // router.get('/books/:id', (req, res) => booksController.getById(req, res));
