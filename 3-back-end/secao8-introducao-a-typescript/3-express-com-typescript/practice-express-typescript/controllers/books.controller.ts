@@ -11,6 +11,7 @@ class BooksController {
     this.getById = this.getById.bind(this);
     this.create = this.create.bind(this);
     this.update = this.update.bind(this);
+    this.remove = this.remove.bind(this);
   }
 
   async getAll(_req: Request, res: Response): Promise<void> {
@@ -39,6 +40,13 @@ class BooksController {
     const id = Number(req.params.id);
     const book = req.body;
     await this.bookService.update(id, book);
+
+    res.status(statusCodes.NO_CONTENT).end();
+  }
+
+  async remove(req: Request, res: Response): Promise<void> {
+    const id = Number(req.params.id);
+    await this.bookService.remove(id);
 
     res.status(statusCodes.NO_CONTENT).end();
   }
