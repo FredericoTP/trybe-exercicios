@@ -11,9 +11,12 @@ router.get('/books/:id', booksController.getById);
 
 router.post('/books', booksController.create);
 
+router.put('/books/:id', booksController.update);
+
 // alternativa ao uso do bind
 // router.get('/books', (req, res) => booksController.getAll(req, res));
 // router.get('/books/:id', (req, res) => booksController.getById(req, res));
 // router.post('/books', (req, res) => booksController.create(req, res));
+// router.put('/books/:id', (req, res) => booksController.update(req, res));
 
 export default router;
