@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  banco:
+    image: mysql:8.0.21
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - 3306:3306
+    restart: 'always'
+    networks:
+      - rede-da-minha-aplicacao
+  servidor:
+    build: .
+    environment:
+      - DATABASE_HOST=banco
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=password
+      - DATABASE_NAME=TypeScriptExpress
+      - APP_PORT=3000
+    ports:
+      - 5500:3000
+    restart: 'always'
+    depends_on:
+      - banco
+    networks:
+      - rede-da-minha-aplicacao
+networks:
+  rede-da-minha-aplicacao: {}
