@@ -9,6 +9,7 @@ class BooksController {
     this.bookService = bookService;
     this.getAll = this.getAll.bind(this);
     this.getById = this.getById.bind(this);
+    this.create = this.create.bind(this);
   }
 
   async getAll(_req: Request, res: Response): Promise<void> {
@@ -25,6 +26,12 @@ class BooksController {
     } else {
       res.status(statusCodes.OK).json(book);
     }
+  }
+
+  async create(req: Request, res: Response): Promise<void> {
+    const book = req.body;
+    const bookCreated = await this.bookService.create(book);
+    res.status(statusCodes.CREATED).json(bookCreated);
   }
 }
 
