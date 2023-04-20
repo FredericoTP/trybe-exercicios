@@ -2,8 +2,11 @@
   "name": "exercise",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/database/index.ts",
   "scripts": {
+    "start": "npm run build && node ./dist/index.js",
+    "dev": "tsnd .",
+    "build": "tsc",
     "db:reset": "npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

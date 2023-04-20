@@ -3,7 +3,7 @@ services:
   banco:
     image: mysql:8.0.21
     environment:
-      - MYSQL_ROOT_PASSWORD=senha_secreta
+      - MYSQL_ROOT_PASSWORD=password
     ports:
       - 3306:3306
     restart: 'always'
@@ -14,7 +14,7 @@ services:
     environment:
       - DATABASE_HOST=banco
       - DATABASE_USER=root
-      - DATABASE_PASSWORD=senha_secreta
+      - DATABASE_PASSWORD=password
       - DATABASE_NAME=TypeScriptExpress
       - APP_PORT=3000
     ports:
