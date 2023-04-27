@@ -16,6 +16,19 @@ class Tv {
     console.log(`TV ${this._brand}, ${this._size} inches, resolution ${this._resolution}.
     Available connections: ${this._connections}`);
   }
+
+  get connectedTo(): string | undefined {
+    return this._connectedTo;
+  }
+
+  set connectedTo(value: string | undefined) {
+    if (!value || this._connections.includes(value)) {
+      this._connectedTo = value;
+      console.log(this._connectedTo);
+    } else {
+      console.log('Sorry, connection unavailable!');
+    }
+  }
 }
 
 const tv1 = new Tv('Samsung', 70, '4k', ['hdmi', 'WiFi', 'Ethernet']);
