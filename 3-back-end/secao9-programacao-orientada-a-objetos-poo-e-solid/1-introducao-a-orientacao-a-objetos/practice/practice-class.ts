@@ -12,4 +12,9 @@ class Tv {
     this.connections = c;
     this.connectedTo = cTo;
   }
+
+  turnOn(): void {
+    console.log(`TV ${this.brand}, ${this.size} inches, resolution ${this.resolution}.
+    Available connections: ${this.connections}`);
+  }
 }
