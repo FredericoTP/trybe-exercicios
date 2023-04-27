@@ -42,7 +42,7 @@ class menuItem {
 
 class Order {
   private _customer: Customer;
-  private _consumption: menuItem[];
+  private _consumption: menuItem[] = [];
   private _paymentMethod: string;
   private _discount: number;
 
@@ -83,5 +83,15 @@ class Order {
 
   set discount(value: number) {
     this._discount = value;
+  }
+
+  totalPrice(): number {
+    return this._consumption.reduce((prev, acc) => { return prev + acc.price }, 0);
+  }
+
+  totalWithDiscount(): number {
+    const total = this.totalPrice();
+
+    return Math.round(total * (1 - this._discount));
   }
 }
