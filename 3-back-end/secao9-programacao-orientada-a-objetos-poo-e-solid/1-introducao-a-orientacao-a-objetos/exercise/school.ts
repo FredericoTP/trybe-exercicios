@@ -50,4 +50,15 @@ class Student {
 
     this._schoolWork = value;
   }
+
+  sumGrades(): number {
+    return [...this._schoolWork, ...this._testGrade].reduce((prev, acc) => { return prev + acc }, 0);
+  }
+
+  sumAverageGrade(): number {
+    const sum = this.sumGrades();
+    const numberOfGrades = this._schoolWork.length + this._testGrade.length;
+
+    return Math.round(sum / numberOfGrades);
+  }
 }
