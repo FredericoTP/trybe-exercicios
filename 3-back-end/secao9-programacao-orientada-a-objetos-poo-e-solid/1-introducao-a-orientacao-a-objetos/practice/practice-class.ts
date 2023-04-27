@@ -34,3 +34,5 @@ class Tv {
 const tv1 = new Tv('Samsung', 70, '4k', ['hdmi', 'WiFi', 'Ethernet']);
 
 tv1.turnOn();
+tv1.connectedTo = 'hdmi';
+console.log(tv1.connectedTo);
