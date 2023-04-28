@@ -1,5 +1,3 @@
-// ./Person.ts
-
 export default class Person {
   protected MINIMUM_NAME_LENGTH = 3;
 
