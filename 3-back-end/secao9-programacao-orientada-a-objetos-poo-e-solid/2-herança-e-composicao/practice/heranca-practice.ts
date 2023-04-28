@@ -1,13 +1,17 @@
 class Superclass {
   constructor(public isSuper: boolean = true) { }
 
-  protected sayHello() {
+  protected sayHello(): void {
     console.log('Olá mundo!');
   }
 }
 
 class Subclass extends Superclass {
-  sayHello2() {
+  constructor(isSuper: boolean = false) {
+    super(isSuper);
+  }
+
+  sayHello2(): void {
     this.sayHello();
   }
 }
