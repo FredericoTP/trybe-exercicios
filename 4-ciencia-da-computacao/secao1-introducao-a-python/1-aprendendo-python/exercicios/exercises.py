@@ -24,3 +24,17 @@ def square(n):
         print(n * '*')
 
 square(5)
+
+# 4- Crie uma função que receba uma lista de nomes e retorne o nome com a maior quantidade de caracteres. Por exemplo, para ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"], o retorno deve ser "Fernanda".
+
+def biggest_name(list):
+    count = 0
+    string = ""
+    for name in list:
+        if len(name) > count:
+            count = len(name)
+            string = name
+    return string
+
+names = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]
+biggest_name(names)
