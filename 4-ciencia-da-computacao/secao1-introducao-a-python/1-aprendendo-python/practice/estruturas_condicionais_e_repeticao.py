@@ -22,6 +22,6 @@ new_ratings
 
 # 3- Percorra a lista do exercício 2 e imprima “Múltiplo de 3” se o elemento for divisível por 3.
 
-for rate in new_ratings:
-    if rate % 3 == 0:
-        print("Múltiplo de 3")
+for rate in ratings:
+    if (rate % 3) == 0:
+        print(f"{rate} é múltiplo de 3")
