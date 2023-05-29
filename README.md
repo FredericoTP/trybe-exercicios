@@ -135,7 +135,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 10-1: _[Projeto - App de Receitas](https://github.com/FredericoTP/trybe-project-16-recipes-app)_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :white_check_mark:
 
 ##### Seção 1: Docker: Utilizando Containers
 
@@ -197,61 +197,28 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 9: Programação Orientada a Objetos (POO) e SOLID
 
 - [x] 9-1: _Introdução à Orientação de Objetos_
-- [ ] 9-2: _Herança e Composição_
-- [ ] 9-3: _Polimorfismo_
-- [ ] 9-4: _SOLID - Introdução e Princípios S, O e D_
-- [ ] 9-5: _SOLID Princípios L e I_
-- [ ] 9-6: _[Projeto - Trybers and Dragons]()_
+- [x] 9-2: _Herança e Composição_
+- [x] 9-3: _Polimorfismo_
+- [x] 9-4: _SOLID - Introdução e Princípios S, O e D_
+- [x] 9-5: _SOLID Princípios L e I_
+- [x] 9-6: _[Projeto - Trybers and Dragons](https://github.com/FredericoTP/trybe-project-24-trybers-and-dragons)_
 
-##### Bloco 29: NodeJS
+##### Seção 10: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
-
-##### Bloco 30: Introdução - Deploy
-
-- [ ] 30-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 30-2: _Deploy - Gerenciadores de Processos_
-- [ ] 30-3: _[Projeto - Stranger Things]()_
-
-##### Bloco 31: Projeto
-
-- [ ] 31-1: _[Projeto - Trybeer]()_
-
-##### Bloco 32: Arquitetura de Software
-
-- [ ] 32-1: _Arquitetura - Princípios SOLID_
-- [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 32-3: _Arquitetura de Software - DDD_
-- [ ] 32-4: _Boas práticas na escrita de testes_
-- [ ] 32-3: _[Projeto - API de Blogs]()_
-
-##### Bloco 33: Sockets
-
-- [ ] 30-1: _Sockets - TCP/UDP & NET_
-- [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _[Projeto - Webchat]()_
-
-##### Bloco 34: Projeto
-
-- [ ] 34-1: _[Projeto - Trybeer V2]()_
+- [x] 10-1: _[Projeto - TFC - Trybe Futebol Clube](https://github.com/FredericoTP/trybe-project-25-trybe-futebol-clube)_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 35: Introdução - Ciência da Computação
+##### Seção 1: Introdução à Python
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [x] 1-1: _Aprendendo Python_
+- [x] 1-2: _Entrada e Saída de Dados com Testes_
 
-##### Bloco 36: Python
+##### Seção 2: Algoritmos
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções_
-- [ ] 35-3: _Entrada e Saída de dados_
-- [ ] 36-4: _Entrada e Saída de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [x] 2-1: _Complexidade de Algoritmos_
+- [ ] 2-2: _Recursividade e Estratégias para Soluções de Problemas_
+- [ ] 2-3: _Algoritmos de ordenação e busca_
+- [ ] 2-4: _[Projeto - Algoritmos]()_
 
 # [...]
