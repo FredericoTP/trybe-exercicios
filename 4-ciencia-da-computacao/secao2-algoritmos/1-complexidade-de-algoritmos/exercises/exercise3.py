@@ -11,3 +11,8 @@ def kids_with_candies(candies, extra_candies):
 
 # saída: [True, True, True, False, True]
 print(kids_with_candies([2, 3, 5, 1, 3], 3))
+
+# Melhor Caso = 0(n)
+# Caso Médio = 0(n)
+# Pior Caso = 0(n)
+# Complexidade de espaço = 0(n)
