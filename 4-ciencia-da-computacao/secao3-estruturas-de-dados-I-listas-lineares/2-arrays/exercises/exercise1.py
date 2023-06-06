@@ -25,4 +25,7 @@ def maximo(array):
     return maximo_contador
 
 
+print(maximo(valores_coletados1))
 print(maximo(valores_coletados2))
+
+# Complexidade O(n), pois é utilizado somente 1 for
