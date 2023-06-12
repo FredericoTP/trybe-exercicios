@@ -224,9 +224,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 3: Estrutura de Dados I: Listas Lineares
 
 - [x] 3-1: _P.O.O em Python_
-- [] 3-2: _Arrays_
-- [] 3-3: _Nó e Listas Encadeadas_
-- [] 3-4: _Pilhas e Filas_
-- [] 3-5: _[Projeto - TING - Trybe is Not Google]()_
+- [x] 3-2: _Arrays_
+- [x] 3-3: _Nó e Listas Encadeadas_
+- [x] 3-4: _Pilhas e Filas_
+- [ ] 3-5: _[Projeto - TING - Trybe is Not Google]()_
 
 # [...]
