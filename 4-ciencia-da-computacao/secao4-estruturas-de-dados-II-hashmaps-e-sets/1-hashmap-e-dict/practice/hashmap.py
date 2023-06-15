@@ -44,3 +44,8 @@ print(new_hashmap.get_value(23))
 print(new_hashmap.get_value(10))
 new_hashmap.update_value(10, "name30")
 print(new_hashmap.get_value(10))
+
+
+# 3- Descubra qual técnica de tratamento de colisão é utilizada pelo Dict, de Python e o HashMap, do Java. Em inglês, o termo de busca é “collision resolution“.
+
+# A classe Dict utiliza o Open Addressing e Java utiliza Separate Chaining.
