@@ -227,6 +227,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _Arrays_
 - [x] 3-3: _Nó e Listas Encadeadas_
 - [x] 3-4: _Pilhas e Filas_
-- [ ] 3-5: _[Projeto - TING - Trybe is Not Google]()_
+- [x] 3-5: _[Projeto - TING - Trybe is Not Google](https://github.com/FredericoTP/trybe-project-27-ting)_
+
+##### Seção 4: Estrutura de Dados II: Hashmaps e Sets
+
+- [x] 4-1: _Hashmap e Dict_
+- [ ] 4-2: _Set_
+- [ ] 4-3: _[Projeto - Restaurant Orders]()_
 
 # [...]
