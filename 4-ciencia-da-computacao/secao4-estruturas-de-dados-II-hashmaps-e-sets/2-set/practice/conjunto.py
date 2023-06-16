@@ -53,16 +53,40 @@ class Conjunto:
 
         return new_conjunto
 
+    def difference(self, conjunto_b):
+        size = self.last_element
 
-A = Conjunto(1000)
-B = Conjunto(10)
-A.add(0)
-A.add(1)
-A.add(2)
-A.add(3)
-B.add(3)
-B.add(4)
-B.add(5)
+        if conjunto_b.last_element > size:
+            size = conjunto_b.last_element
 
+        new_conjunto = Conjunto(size)
 
-print(A.intersection(B))
+        for index in range(size + 1):
+            if self.data[index] and not conjunto_b.data[index]:
+                new_conjunto.add(index)
+
+        return new_conjunto
+
+    def issubset(self, conjunto_b):
+        size = self.last_element
+
+        if conjunto_b.last_element > size:
+            size = conjunto_b.last_element
+
+        for index in range(size + 1):
+            if self.data[index] and not conjunto_b.data[index]:
+                return False
+
+        return True
+
+    def issuperset(self, conjunto_b):
+        size = self.last_element
+
+        if conjunto_b.last_element > size:
+            size = conjunto_b.last_element
+
+        for index in range(size + 1):
+            if conjunto_b.data[index] and not self.data[index]:
+                return False
+
+        return True
