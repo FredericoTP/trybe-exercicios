@@ -39,6 +39,20 @@ class Conjunto:
 
         return new_conjunto
 
+    def intersection(self, conjunto_b):
+        size = self.last_element
+
+        if conjunto_b.last_element > size:
+            size = conjunto_b.last_element
+
+        new_conjunto = Conjunto(size)
+
+        for index in range(size + 1):
+            if self.data[index] and conjunto_b.data[index]:
+                new_conjunto.add(index)
+
+        return new_conjunto
+
 
 A = Conjunto(1000)
 B = Conjunto(10)
@@ -51,4 +65,4 @@ B.add(4)
 B.add(5)
 
 
-print(A.union(B))
+print(A.intersection(B))
