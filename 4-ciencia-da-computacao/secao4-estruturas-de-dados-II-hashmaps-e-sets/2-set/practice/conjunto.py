@@ -25,13 +25,30 @@ class Conjunto:
         if value > self.last_element:
             self.last_element = value
 
+    def union(self, conjunto_b):
+        size = self.last_element
+
+        if conjunto_b.last_element > size:
+            size = conjunto_b.last_element
+
+        new_conjunto = Conjunto(size)
+
+        for index in range(size + 1):
+            if self.data[index] or conjunto_b.data[index]:
+                new_conjunto.add(index)
+
+        return new_conjunto
+
 
 A = Conjunto(1000)
+B = Conjunto(10)
 A.add(0)
-A.add(10)
-A.add(100)
-A.add(1000)
+A.add(1)
+A.add(2)
+A.add(3)
+B.add(3)
+B.add(4)
+B.add(5)
 
-print(A)
-print(A.__contains__(10))
-print(A.__contains__(11))
+
+print(A.union(B))
