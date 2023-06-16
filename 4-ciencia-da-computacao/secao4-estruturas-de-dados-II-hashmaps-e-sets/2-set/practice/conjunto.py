@@ -15,6 +15,9 @@ class Conjunto:
         string += "}"
         return string
 
+    def __contains__(self, value):
+        return self.data[value]
+
     def add(self, value):
         if not self.data[value]:
             self.data[value] = True
@@ -30,3 +33,5 @@ A.add(100)
 A.add(1000)
 
 print(A)
+print(A.__contains__(10))
+print(A.__contains__(11))
