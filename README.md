@@ -207,7 +207,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 10-1: _[Projeto - TFC - Trybe Futebol Clube](https://github.com/FredericoTP/trybe-project-25-trybe-futebol-clube)_
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :white_check_mark:
 
 ##### Seção 1: Introdução à Python
 
@@ -232,7 +232,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 4: Estrutura de Dados II: Hashmaps e Sets
 
 - [x] 4-1: _Hashmap e Dict_
-- [ ] 4-2: _Set_
-- [ ] 4-3: _[Projeto - Restaurant Orders]()_
+- [x] 4-2: _Set_
+- [x] 4-3: _[Projeto - Restaurant Orders](https://github.com/FredericoTP/trybe-28-restaurant-orders)_
+
+## Eletiva Python :hourglass_flowing_sand:
+
+##### Seção 1: Debug com Python
+
+- [x] 1-1: _Estratégias de debug com Python_
+- [ ] 1-2: _Automatizando o bug hunting com Pytest_
+- [ ] 1-3: _Avançando com teste em Python_
+- [ ] 1-4: _Aula ao vivo_
 
 # [...]
