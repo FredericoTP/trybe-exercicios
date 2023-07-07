@@ -27,6 +27,6 @@ cg_150 = Motocicleta("120 km/h")
 yamaha_R1 = Motocicleta("300 km/h")
 ford_C_2042 = Caminhao("140 km/h")
 
-print_velocidade_maxima(cg_150)  # 120 km/h
-print_velocidade_maxima(yamaha_R1)  # 300 km/h
-print_velocidade_maxima(ford_C_2042)  # TypeError
+print_velocidade_maxima(cg_150)
+print_velocidade_maxima(yamaha_R1)
+print_velocidade_maxima(ford_C_2042)
