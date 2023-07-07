@@ -240,8 +240,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 1: Debug com Python
 
 - [x] 1-1: _Estratégias de debug com Python_
-- [ ] 1-2: _Automatizando o bug hunting com Pytest_
-- [ ] 1-3: _Avançando com teste em Python_
-- [ ] 1-4: _Aula ao vivo_
+- [x] 1-2: _Automatizando o bug hunting com Pytest_
+- [x] 1-3: _Avançando com teste em Python_
+- [x] 1-3: _[Projeto - ProFiler]()_
+- [x] 1-4: _Aula ao vivo_
+
+##### Seção 2: Programação Orientada a Objetos
+
+- [x] 2-1: _POO em Python_
+- [ ] 2-2: _Aula ao vivo_
+- [ ] 2-3: _Pilares da POO_
+- [ ] 2-4: _Classes abstratas, interfaces e protocolos_
+- [ ] 2-5: _[Projeto - Inventory Report]()_
+- [ ] 2.6: _Aula ao vivo_
 
 # [...]
