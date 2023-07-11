@@ -8,17 +8,17 @@ from abc import ABC, abstractmethod
 
 class Pessoa(ABC):
     @abstractmethod
-    def imprimir_cargo(self):
+    def imprimir_cargo(self) -> None:
         ...
 
 
 class Vendedor(Pessoa):
-    def imprimir_cargo(self):
+    def imprimir_cargo(self) -> None:
         print("Meu cargo é de vendedor")
 
 
 class Gerente(Pessoa):
-    def imprimir_cargo(self):
+    def imprimir_cargo(self) -> None:
         print("Meu cargo é de gerente")
 
 
