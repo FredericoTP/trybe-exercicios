@@ -248,10 +248,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 2: Programação Orientada a Objetos
 
 - [x] 2-1: _POO em Python_
-- [ ] 2-2: _Aula ao vivo_
-- [ ] 2-3: _Pilares da POO_
-- [ ] 2-4: _Classes abstratas, interfaces e protocolos_
-- [ ] 2-5: _[Projeto - Inventory Report]()_
-- [ ] 2.6: _Aula ao vivo_
+- [x] 2-2: _Aula ao vivo_
+- [x] 2-3: _Pilares da POO_
+- [x] 2-4: _Classes abstratas, interfaces e protocolos_
+- [x] 2-5: _[Projeto - Inventory Report]()_
+- [x] 2.6: _Aula ao vivo_
+
+##### Seção 2: Raspagem de Dados
+
+- [x] 3-1: _Raspagem de Dados_
+- [ ] 3-2: _Outras ferramentas de raspagem de dados_
+- [ ] 3-3: _MongoDB e Crawlers_
+- [ ] 3-3: _[Projeto - Tech News]()_
+- [ ] 3-4: _Aula ao vivo_
 
 # [...]
