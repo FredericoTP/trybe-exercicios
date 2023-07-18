@@ -1,0 +1,10 @@
+Usando o banco de dados MongoDB trybnb devidamente carregado via container:
+  Realize a inserção de três documento na coleção places que contenham os atributos _id, name e description utilizando o método insertMany(); 
+
+db.places.insertMany(
+  [
+    {_id: 101, name: "Apartamento em Marte", description: "Aconchegante"},
+    {_id: 102, name: "Casa na Lua", description: "Remoto"},
+    {_id: 103, name: "Chalé em Júpiter", description: "Grandioso"}
+  ]
+)
