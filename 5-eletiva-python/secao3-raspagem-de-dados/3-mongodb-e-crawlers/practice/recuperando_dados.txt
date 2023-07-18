@@ -1,0 +1,9 @@
+Usando o banco de dados MongoDB trybnb devidamente carregado via container:
+
+  Realize uma busca por todos os imóveis que se localizam na Espanha ordenados, de forma crescente, pelo atributo _id;
+
+db.places.find({'address.country_code': 'ES'}).sort({'_id': 1})
+
+  Realize uma busca por todos os imóveis que se localizam nos Estados Unidos que retorne a quantidade de imóveis.
+
+db.places.find({'address.country_code': 'US'}).count()
