@@ -257,9 +257,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 2: Raspagem de Dados
 
 - [x] 3-1: _Raspagem de Dados_
-- [ ] 3-2: _Outras ferramentas de raspagem de dados_
-- [ ] 3-3: _MongoDB e Crawlers_
-- [ ] 3-3: _[Projeto - Tech News]()_
-- [ ] 3-4: _Aula ao vivo_
+- [x] 3-2: _Outras ferramentas de raspagem de dados_
+- [x] 3-3: _MongoDB e Crawlers_
+- [x] 3-3: _[Projeto - Tech News]()_
+- [x] 3-4: _Aula ao vivo_
 
 # [...]
