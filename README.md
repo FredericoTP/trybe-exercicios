@@ -254,12 +254,22 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 2-5: _[Projeto - Inventory Report]()_
 - [x] 2.6: _Aula ao vivo_
 
-##### Seção 2: Raspagem de Dados
+##### Seção 3: Raspagem de Dados
 
 - [x] 3-1: _Raspagem de Dados_
 - [x] 3-2: _Outras ferramentas de raspagem de dados_
 - [x] 3-3: _MongoDB e Crawlers_
 - [x] 3-3: _[Projeto - Tech News]()_
 - [x] 3-4: _Aula ao vivo_
+
+##### Seção 4: Flask
+
+- [x] 4-1: _Ambiente e primeira API_
+- [ ] 4-2: _Server Side Rendering_
+- [ ] 4-3: _Aula ao vivo_
+- [ ] 4-4: _Aprofundando em Templates com Flask_
+- [ ] 4-5: _API e Testes em Flask_
+- [ ] 4-6: _[Projeto - Traduzo]()_
+- [ ] 4-7: _Aula ao vivo_
 
 # [...]
