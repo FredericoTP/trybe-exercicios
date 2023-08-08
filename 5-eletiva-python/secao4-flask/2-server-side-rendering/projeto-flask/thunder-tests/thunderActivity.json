@@ -1,0 +1,96 @@
+[
+    {
+        "_id": "14ee655f-eaad-490e-8edc-93133103fd6a",
+        "colId": "history",
+        "containerId": "",
+        "name": "Show",
+        "url": "http://127.0.0.1:8000/jokes/6454900c61e30fda89cdbe4b",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-05-04T04:06:27.893Z",
+        "modified": "2023-05-05T05:16:19.410Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "377a1c99-50f2-45f9-97c3-2a2e2b6d0686",
+        "colId": "history",
+        "containerId": "",
+        "name": "Delete",
+        "url": "http://127.0.0.1:8000/jokes/6454900c61e30fda89cdbe4b",
+        "method": "DELETE",
+        "sortNum": 0,
+        "created": "2023-05-04T04:06:27.893Z",
+        "modified": "2023-05-05T05:16:25.088Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "b59010c4-c941-4f84-ae1d-d725e96c164a",
+        "colId": "history",
+        "containerId": "",
+        "name": "Update",
+        "url": "http://127.0.0.1:8000/jokes/6454900c61e30fda89cdbe4b",
+        "method": "PUT",
+        "sortNum": 0,
+        "created": "2023-05-04T04:06:27.893Z",
+        "modified": "2023-05-05T05:16:22.386Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"joke\": \"ssss\"\n}\n",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "f36c375b-fd4c-4c23-9f65-faaf0bb89efd",
+        "colId": "history",
+        "containerId": "",
+        "name": "GetRandom",
+        "url": "http://127.0.0.1:8000/jokes/random",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-05-04T04:06:27.893Z",
+        "modified": "2023-05-04T05:19:02.608Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "48dadf9a-c8bc-4f59-ad42-c06c793b25da",
+        "colId": "history",
+        "containerId": "",
+        "name": "All",
+        "url": "http://127.0.0.1:8000/jokes",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-05-04T04:06:27.893Z",
+        "modified": "2023-05-04T05:19:36.110Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "eceb2331-ebc6-4872-8dbe-011374302e65",
+        "colId": "history",
+        "containerId": "",
+        "name": "Create",
+        "url": "http://127.0.0.1:8000/jokes",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2023-05-04T04:06:33.992Z",
+        "modified": "2023-07-05T03:32:11.256Z",
+        "headers": [],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\n  \"joke\": \"Por que o espanador não luta karatê? <br> Porque ele luta capoeira\"\n}\n",
+            "form": []
+        },
+        "tests": []
+    }
+]

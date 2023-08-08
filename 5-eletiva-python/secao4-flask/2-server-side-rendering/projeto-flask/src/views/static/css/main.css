@@ -1,0 +1,53 @@
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+  font-family: Shanti;
+}
+
+/* Estilos do body */
+body {
+  text-align: center;
+  background-color: #3E4854;
+}
+
+/* Estilos do conteúdo principal */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+button {
+  margin: 20px;
+  padding: 20px;
+  background-color: #1DB702;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+p {
+  font-size: 4.2em;
+  color: #fafafa;
+}
+
+/* Estilos do formulário */
+form input[type="text"] {
+  width: 60%;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+form button {
+  background-color: #1DB702;
+  color: #fafafa;
+  border: none;
+  border-radius: 10px;
+  width: 35%;
+  font-size: 2.3em;
+}
