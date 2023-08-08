@@ -5,10 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='product.css') }}">
 </head>
 
 <body>
-
+  <h1>Gerenciador de Produtos</h1>
+  <h2>Produtos:</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Ações</th>
+    </tr>
+    {% for product in products %}
+    <tr>
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>R$ {{ product.price }}</td>
+      <td>
+        <a href="/delete/{{ product.id }}">Excluir</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
 </body>
 
 </html>
