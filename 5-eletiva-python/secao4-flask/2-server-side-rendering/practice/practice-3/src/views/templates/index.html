@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='movies.css') }}">
+</head>
+
+<body>
+  <div>
+    <h1>Filmes</h1>
+    <ul>
+      {% for movie in movies %}
+      {% set class_movie = 'movie_list' %}
+
+      <li class='{{ class_movie }}'>
+        <p>Título: {{ movie.title }}</p>
+        <p>Lançamento: {{ movie.year }}</p>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </div>
+</body>
+
+</html>

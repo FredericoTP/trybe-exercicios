@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='task.css') }}">
+</head>
+
+<body>
+  <h1>Gerenciador de Tarefas</h1>
+  <h2>Tarefas:</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Tarefa</th>
+      <th>Concluída</th>
+      <th>Ações</th>
+    </tr>
+    {% for task in task_list %}
+    <tr>
+      <td>{{ task.id }}</td>
+      <td>{{ task.title }}</td>
+      {% if task.completed %}
+      <td>Concluída</td>
+      {% else %}
+      <td>Não Concluída</td>
+      {% endif %}
+      <td>
+        <a href="/complete/{{ task.id }}">Concluir</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <h2>Adicionar Tarefa:</h2>
+  <form method="POST" action="/">
+    <label for="task">Tarefa:</label>
+    <input type="text" id="task" name="task" required>
+    <button type="submit">Adicionar</button>
+  </form>
+</body>
+
+</html>
