@@ -16,7 +16,9 @@
     {% endfor %}
   </ul>
   <h2>Modo de preparo:</h2>
-  <p>{{ receita.preparo }}</p>
+  {% for item in receita.preparo|split_phrase %}
+  <p>{{ item|trim|capitalize }}</p>
+  {% endfor %}
 </body>
 
 </html>

@@ -1,8 +1,10 @@
 from jinja2 import FileSystemLoader, Environment
+from filters.custom_filter import split_phrase
 
 loader = FileSystemLoader("receitas/templates")
 
 environment = Environment(loader=loader)
+environment.filters["split_phrase"] = split_phrase
 
 template = environment.get_template("receita.html")
 
