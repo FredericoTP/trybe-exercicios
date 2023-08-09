@@ -1,0 +1,1 @@
+Crie uma função que utilize o Jinja2 para renderizar um template HTML que exiba uma tabela com informações sobre produtos. A função deve receber uma lista de dicionários, onde cada dicionário representa um produto com as chaves “nome”, “preco” e “estoque”.
