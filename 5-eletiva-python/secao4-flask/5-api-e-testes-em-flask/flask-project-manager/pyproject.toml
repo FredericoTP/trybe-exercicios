@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+minversion = "7.3"
+addopts = "-vv --capture=fd"
+testpaths = ["tests",]
+pythonpath = [
+    "src"
+]
