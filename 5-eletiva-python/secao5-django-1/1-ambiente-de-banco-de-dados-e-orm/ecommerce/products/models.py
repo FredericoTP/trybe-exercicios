@@ -15,3 +15,19 @@ class Product(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.price}"
+
+
+class Customers(models.Model):
+    name = models.CharField(max_length=50)
+    address = models.TextField(max_length=200)
+    phone = models.TextField(max_length=20)
+
+    def __str__(self) -> str:
+        return f"{self.name}"
+
+
+customer_one = Customers(
+    name="Saul Goodman",
+    address="Rua Better Call Saul, 123",
+    phone="(85) 99998-9999",
+)
