@@ -20,7 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-u#^q0(m7sgvsx@@cweuk!eikm#^#4$3zwr*f-$*1a7*tt(5%=p"
+SECRET_KEY = (
+    "django-insecure-u#^q0(m7sgvsx@@cweuk!eikm#^#4$3zwr*f-$*1a7*tt(5%=p"
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,8 +77,12 @@ WSGI_APPLICATION = "Schedule.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "schedule_database",
+        "USER": "root",
+        "PASSWORD": "password",
+        "HOST": "127.0.0.1",
+        "PORT": "3306",
     }
 }
 
