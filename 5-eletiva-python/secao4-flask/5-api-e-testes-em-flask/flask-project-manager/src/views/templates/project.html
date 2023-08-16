@@ -1,0 +1,18 @@
+{% extends "basic.html" %}
+{% block content %}
+    <section class="project">
+        <h1>{{ project[0].name }}</h1>
+        <section class="task-container">
+            {% for task in project %}
+                <a href="/task/{{ task._id }}">
+                    <section class="task-project">
+                        <p>{{ task.task }}</p>
+                        <p>{{ task.status }}</p>
+                        <p>{{ task.responsible }}</p>
+                        <p>Descrição: {{ task.description_task }}</p>
+                    </section>
+                </a>
+            {% endfor %}
+        </section>
+    </section>
+{% endblock %}

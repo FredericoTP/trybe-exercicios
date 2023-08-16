@@ -1,0 +1,21 @@
+{% extends "basic.html" %}
+{% block content %}
+    <section class="projects-container">
+        {% for project in projects %}
+            <section class="project-home">
+                <a href="/projects/{{ project[0].id_project }}" class="project-title">
+                    <h1>{{ project[0].name }}</h1>
+                </a>
+                {% for task in project %}
+                    <a href="/task/{{ task._id }}">
+                        <section class="task-home">
+                            <p>{{ task.task }}</p>
+                            <p>{{ task.status }}</p>
+                            <p>{{ task.responsible }}</p>
+                        </section>
+                    </a>
+                {% endfor %}
+            </section>
+        {% endfor %}
+    </section>
+{% endblock %}
