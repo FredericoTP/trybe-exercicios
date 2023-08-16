@@ -265,11 +265,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 4: Flask
 
 - [x] 4-1: _Ambiente e primeira API_
-- [ ] 4-2: _Server Side Rendering_
-- [ ] 4-3: _Aula ao vivo_
-- [ ] 4-4: _Aprofundando em Templates com Flask_
-- [ ] 4-5: _API e Testes em Flask_
-- [ ] 4-6: _[Projeto - Traduzo]()_
-- [ ] 4-7: _Aula ao vivo_
+- [x] 4-2: _Server Side Rendering_
+- [x] 4-3: _Aula ao vivo_
+- [x] 4-4: _Aprofundando em Templates com Flask_
+- [x] 4-5: _API e Testes em Flask_
+- [x] 4-6: _[Projeto - Traduzo]()_
+- [x] 4-7: _Aula ao vivo_
+
+##### Seção 5: Django I
+- [x] 5-1: _Ambiente de banco de dados e ORM_
+- [ ] 5-2: _Templates do Django_
+- [ ] 5-3: _Formulários e Relacionamento de modelos_
+- [ ] 5-4: _Aula ao vivo_
+- [ ] 5-5: _Django Rest Framework_
 
 # [...]
