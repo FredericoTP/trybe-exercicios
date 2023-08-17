@@ -14,4 +14,5 @@
 <p><strong>Instruções:</strong> {{ recipe.instructions }}</p>
 <p><strong>Data de criação:</strong> {{ recipe.created_at }}</p>
 <p><strong>Última atualização:</strong> {{ recipe.updated_at }}</p>
+<a href="{% url 'delete_recipe' recipe.id %}">Excluir Receita</a>
 {% endblock %}
