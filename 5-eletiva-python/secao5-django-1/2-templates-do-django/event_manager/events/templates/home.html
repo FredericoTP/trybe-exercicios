@@ -1,15 +1,24 @@
 <!-- events/templates/home.html -->
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
 Primeiro Template
 {% endblock %}
 
 {% block content %}
-<h1> Meu primeiro template usando Django! </h1>
-<h2> {{ company }} </h2>
+<h1> Eventos {{ company }} </h1>
 {% for event in events %}
-<p> <a href="{% url 'details-page' event.id %}"> {{ event }} </a> </p>
+<a href="{% url 'details-page' event.id %}">
+  <div>
+    {% if event.image %}
+    <img src="{% static event.image.url %}" alt="Imagem sobre o evento" height="50">
+    {% endif %}
+    <h3> {{ event.title }} </h3>
+    <p> {{ event.date }} </p>
+    <p> {{ event.location }} </p>
+  </div>
+</a>
 {% empty %}
 <p> Não existem eventos cadastrados </p>
 {% endfor %}
