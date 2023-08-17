@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+{% extends 'base.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primeiro Template</title>
-</head>
+{% block title %}
+Primeiro Template
+{% endblock %}
 
-<body>
-  <h1> Meu primeiro template usando Django! </h1>
-</body>
-
-</html>
+{% block content %}
+<h1> Meu primeiro template usando Django! </h1>
+<h2>{{ company }}</h2>
+{% endblock %}
