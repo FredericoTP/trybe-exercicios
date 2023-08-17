@@ -10,10 +10,12 @@ Lista de Receitas
 <h1>Lista de Receitas</h1>
 {% for recipe in recipes %}
 <div>
-  {% if recipe.image %}
-  <img src="{% static recipe.image.url %}" alt="Imagem da receita">
-  {% endif %}
-  <h2>{{ recipe.name }}</h2>
+  <a href="{% url 'details-page' recipe.id %}">
+    {% if recipe.image %}
+    <img src="{% static recipe.image.url %}" alt="Imagem da receita">
+    {% endif %}
+    <h2>{{ recipe.name }}</h2>
+  </a>
 </div>
 {% empty %}
 <p>Nenhuma receita encontrada.</p>

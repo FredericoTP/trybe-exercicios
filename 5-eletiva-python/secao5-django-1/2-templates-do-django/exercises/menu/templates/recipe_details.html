@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ recipe.name }}
+{% endblock %}
+
+{% block content %}
+{% if recipe.image %}
+<img src="{% static recipe.image.url %}" alt="Imagem da receita">
+{% endif %}
+<h1>{{ recipe.name }}</h1>
+<p><strong>Ingredientes:</strong> {{ recipe.ingredients }}</p>
+<p><strong>Instruções:</strong> {{ recipe.instructions }}</p>
+<p><strong>Data de criação:</strong> {{ recipe.created_at }}</p>
+<p><strong>Última atualização:</strong> {{ recipe.updated_at }}</p>
+{% endblock %}
