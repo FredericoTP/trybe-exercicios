@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content %}
+<h2>Músicas:</h2>
+{% for music in musics %}
+<p>{{music}}</p>
+{% empty %}
+<p>Nenhuma música encontrada</p>
+{% endfor %}
+
+<h2>Cantores:</h2>
+{% for singer in singers %}
+<p>{{ singer }}</p>
+{% empty %}
+<p>Nenhum cantor encontrado</p>
+{% endfor %}
+
+<a href="{% url 'musics-page' %}">Criar nova música</a>
+<a href="{% url 'singers-page' %}">Criar novo cantor</a>
+{% endblock %}
