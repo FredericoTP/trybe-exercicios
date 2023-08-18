@@ -1,4 +1,5 @@
 from django.db import models
+from playlists.validators import validate_music_length
 
 
 # Create your models here.
@@ -22,7 +23,7 @@ class Playlist(models.Model):
 class Music(models.Model):
     name = models.CharField(max_length=50)
     recorded_at = models.DateField()
-    length_in_seconds = models.IntegerField()
+    length_in_seconds = models.IntegerField(validators=[validate_music_length])
 
     def __str__(self):
         return self.name
