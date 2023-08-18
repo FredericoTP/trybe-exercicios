@@ -1,5 +1,5 @@
 from django import forms
-from playlists.validators import validate_music_length
+from playlists.validators import validate_music_length, validate_name
 
 
 class CreateMusicForm(forms.Form):
@@ -14,4 +14,4 @@ class CreatePlaylistForm(forms.Form):
 
 
 class CreateSingerForm(forms.Form):
-    name = forms.CharField(max_length=50)
+    name = forms.CharField(max_length=50, validators=[validate_name])

@@ -1,10 +1,10 @@
 from django.db import models
-from playlists.validators import validate_music_length
+from playlists.validators import validate_music_length, validate_name
 
 
 # Create your models here.
 class Singer(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, validators=[validate_name])
 
     def __str__(self) -> str:
         return self.name
