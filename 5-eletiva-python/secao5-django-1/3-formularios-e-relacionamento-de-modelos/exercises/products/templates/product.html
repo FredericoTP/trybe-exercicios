@@ -6,6 +6,7 @@ Formulário para Novos Produtos
 
 {% block content %}
 <form method="post" action="{% url 'products-page' %}">
+  {% csrf_token %}
   {{ form.as_p }}
   <input type="submit" value="Submeter Formulário">
 </form>

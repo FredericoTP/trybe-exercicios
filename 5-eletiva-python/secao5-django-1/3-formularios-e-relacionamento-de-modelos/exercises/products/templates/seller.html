@@ -6,6 +6,7 @@ Formulário para Novos Vendedores
 
 {% block content %}
 <form method="post" action="{% url 'sellers-page' %}">
+  {% csrf_token %}
   {{ form.as_p }}
   <input type="submit" value="Submeter Formulário">
 </form>

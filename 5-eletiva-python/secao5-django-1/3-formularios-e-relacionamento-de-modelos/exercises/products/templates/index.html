@@ -5,5 +5,12 @@ Home
 {% endblock %}
 
 {% block content %}
-<h1>Home</h1>
+<h1>Boas vindas ao Projeto Marketplace!</h1>
+
+<ul>
+  <li><a href="{% url 'products-page' %}">Criar Produto</a></li>
+  <li><a href="{% url 'sellers-page' %}">Criar Vendedor</a></li>
+  <li><a href="{% url 'buyers-page' %}">Criar Comprador</a></li>
+  <li><a href="{% url 'orders-page' %}">Criar Pedido</a></li>
+</ul>
 {% endblock %}
