@@ -10,3 +10,7 @@ class CreateMusicForm(forms.Form):
 class CreatePlaylistForm(forms.Form):
     name = forms.CharField(max_length=50)
     is_active = forms.BooleanField()
+
+
+class CreateSingerForm(forms.Form):
+    name = forms.CharField(max_length=50)
