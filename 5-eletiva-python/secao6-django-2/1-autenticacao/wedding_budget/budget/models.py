@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 # Fornecedor
@@ -12,6 +13,7 @@ class Vendor(models.Model):
 
 # Casamento
 class Marriage(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     codename = models.CharField(max_length=50)
     date = models.DateField()
 
@@ -26,6 +28,7 @@ class Marriage(models.Model):
 
 # Orçamento
 class Budget(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     vendors = models.ManyToManyField("Vendor", related_name="budgets")
     marriage = models.OneToOneField(
         Marriage, on_delete=models.CASCADE, related_name="budget"
