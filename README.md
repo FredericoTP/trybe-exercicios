@@ -274,9 +274,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 5: Django I
 - [x] 5-1: _Ambiente de banco de dados e ORM_
-- [ ] 5-2: _Templates do Django_
-- [ ] 5-3: _Formulários e Relacionamento de modelos_
-- [ ] 5-4: _Aula ao vivo_
-- [ ] 5-5: _Django Rest Framework_
+- [x] 5-2: _Templates do Django_
+- [x] 5-3: _Formulários e Relacionamento de modelos_
+- [x] 5-4: _Aula ao vivo_
+- [x] 5-4: _[Projeto - Spotnews]()_
+- [x] 5-5: _Django Rest Framework_
+
+##### Seção 6: Django II
+- [x] 6-1: _Autenticação_
+- [ ] 6-2: _Testando aplicações Django_
+- [ ] 6-3: _Aula ao vivo_
+- [ ] 6-3: _[Projeto]()_
+- [ ] 6-4: _Deploy da aplicação com Django_
 
 # [...]
