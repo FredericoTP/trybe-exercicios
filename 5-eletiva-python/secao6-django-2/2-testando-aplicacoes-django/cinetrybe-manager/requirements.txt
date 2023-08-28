@@ -1,0 +1,6 @@
+Django==4.2.3
+djangorestframework==3.14.0
+gunicorn==21.2.0
+Markdown==3.4.4
+mysqlclient==2.2.0
+whitenoise==6.5.0
