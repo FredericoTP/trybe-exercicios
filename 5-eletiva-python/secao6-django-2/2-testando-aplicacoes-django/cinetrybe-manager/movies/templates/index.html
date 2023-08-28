@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Cine Trybe
+{% endblock %}
+
+{% block content %}
+
+
+<nav class="bg-black p-2">
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+            <a href="{% url 'homepage' %}">
+            <img src="{% static 'img/logotipo.png' %}" alt="Logo" class="w-16">
+            </a>
+            <ul class="flex space-x-4">
+                <li class="text-2xl text-white">Cinemas</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mx-auto px-4 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    {% for movie_theater in movie_theaters %}
+    <a href="{% url 'theater_details' movie_theater.id %}">
+        <div class="bg-white rounded-lg shadow-md">
+            <img src="{% static 'img/cinema_default.jpeg' %}" alt="Imagem padrão de cinema"
+                class="w-full h-32 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2 text-center">{{movie_theater.name}}</h3>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
