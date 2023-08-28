@@ -74,7 +74,7 @@ def test_movie_theaters_table_is_healthy():
     assert number_of_movie_theaters == 1
 
 
-def test_movie_room_table_is_healthy():
+def test_movie_rooms_table_is_healthy():
     number_of_movie_rooms = len(MovieRoom.objects.all())
     assert number_of_movie_rooms == 1
 
