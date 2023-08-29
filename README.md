@@ -282,9 +282,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 6: Django II
 - [x] 6-1: _Autenticação_
-- [ ] 6-2: _Testando aplicações Django_
+- [x] 6-2: _Testando aplicações Django_
 - [ ] 6-3: _Aula ao vivo_
-- [ ] 6-3: _[Projeto]()_
+- [ ] 6-3: _[Projeto - Super Portfólio]()_
 - [ ] 6-4: _Deploy da aplicação com Django_
 
 # [...]
