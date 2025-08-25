@@ -70,3 +70,14 @@ Promise.any([
     console.log(result);
   })
   .catch((error) => console.log(error.message));
+
+// Retorna uma única promise que é resolvida quando todas as promises passadas forem finalizadas.
+Promise.allSettled([
+  generateResolvedPromise(3000),
+  generateRejectedPromise(2000),
+  generateResolvedPromise(1000),
+])
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => console.log(error.errors));
